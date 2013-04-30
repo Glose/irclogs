@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ce32a26150489438e056d55f8dd522d1",
+    "hash": "c3cd96888f9bc7d01c5165efba1bde73",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -621,12 +621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/julien-c/mongovel.git",
-                "reference": "4d7bf1a1a9fc0d5d41e01f2d435a200b7d366304"
+                "reference": "19250da569f4f71f2903797ffbb1a5fc88ee74d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/julien-c/mongovel/zipball/4d7bf1a1a9fc0d5d41e01f2d435a200b7d366304",
-                "reference": "4d7bf1a1a9fc0d5d41e01f2d435a200b7d366304",
+                "url": "https://api.github.com/repos/julien-c/mongovel/zipball/19250da569f4f71f2903797ffbb1a5fc88ee74d0",
+                "reference": "19250da569f4f71f2903797ffbb1a5fc88ee74d0",
                 "shasum": ""
             },
             "require": {
@@ -665,7 +665,7 @@
                 "mongo",
                 "mongodb"
             ],
-            "time": "2013-04-30 14:44:53"
+            "time": "2013-04-30 18:40:04"
         },
         {
             "name": "laravel/framework",
