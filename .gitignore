@@ -4,3 +4,4 @@
 .sass-cache
 /vendor
 /node_modules
+/bootstrap/compiled.php
