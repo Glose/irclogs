@@ -10,6 +10,9 @@ client.addListener('message', function (from, to, message) {
 	console.log(from + ' => ' + to + ': ' + message);
 });
 
+client.addListener('join', function (channel, nick, message) {
+	console.log('JOIN', channel, nick, message);
+});
 
 ////////////////////////////////////////////////////////////////////
 /////////////////////////// ERROR HANDLING /////////////////////////
