@@ -4,18 +4,31 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem; }
 
+input[type=search] {
+  box-shadow: none;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border: 2px solid #577aa1; }
+
 .header {
   padding: 1rem;
   color: white;
-  background-color: #33485f; }
+  background-color: #33485f;
+  position: relative; }
   .header h1 {
-    margin: 0; }
+    margin: 0;
+    padding: 0;
+    line-height: 1; }
+  .header form {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem; }
 
 .content {
   padding: 2rem; }
 
 .logs {
-  width: 50%; }
+  max-width: 75rem; }
 
 .log-entry {
   margin-bottom: .5rem; }

@@ -23,6 +23,13 @@ body {
 	font-size: 1rem;
 }
 
+input[type=search] {
+	box-shadow: none;
+	font-family: $font-sans;
+	font-size: 1rem;
+	border: 2px solid lighten($dark-blue, 20);
+}
+
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////// LAYOUT //////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -31,8 +38,19 @@ body {
 	padding: 1rem;
 	color: white;
 	background-color: $dark-blue;
+	position: relative;
+
 	h1 {
 		margin: 0;
+		padding: 0;
+		line-height: 1;
+	}
+
+	form {
+		$offset: 1.2rem;
+		position: absolute;
+		top: $offset;
+		right: $offset;
 	}
 }
 
@@ -41,7 +59,7 @@ body {
 }
 
 .logs {
-	width: 50%;
+	max-width: 75rem;
 }
 
 .log-entry {

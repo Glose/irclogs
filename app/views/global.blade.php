@@ -10,6 +10,9 @@
 <body>
 	<header class='header'>
 		<h1>IRC Logs</h1>
+		<form>
+			<input type="search" name="query">
+		</form>
 	</header>
 	<section class='content'>
 		@yield('content')
