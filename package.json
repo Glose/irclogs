@@ -15,6 +15,7 @@
   "readmeFilename": "README.md",
   "gitHead": "074b3d25541b4cdb01b027f58a8d39538d63c5b2",
   "dependencies": {
-    "irc": "~0.3.6"
+    "irc": "~0.3.6",
+    "mongojs": "~0.7.4"
   }
 }
