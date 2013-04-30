@@ -9,25 +9,26 @@ var client = new irc.Client('irc.freenode.net', 'irclogs', {
 
 var logs = mongojs('irclogs').collection('logs');
 
+var logSave = function(hash) {
+	console.log(hash);
+	hash.time = new IsoDate;
+	logs.save(hash, {w: 0});
+}
 
 client.addListener('message', function (nick, to, text, message) {
-	console.log(nick + ' => ' + to + ': ' + text);
-	logs.save({type: 'message', nick: nick, text: text}, {w: 0});
+	logSave({type: 'message', nick: nick, text: text});
 });
 
 client.addListener('join', function (channel, nick, message) {
-	console.log('JOIN', channel, nick, message);
-	logs.save({type: 'join', nick: nick}, {w: 0});
+	logSave({type: 'join', nick: nick});
 });
 
 client.addListener('part', function (channel, nick, reason, message) {
-	console.log('PART', channel, nick, reason, message);
-	logs.save({type: 'part', nick: nick, reason: reason}, {w: 0});
+	logSave({type: 'part', nick: nick, reason: reason});
 });
 
 client.addListener('quit', function (nick, reason, channels, message) {
-	console.log('QUIT', nick, reason, channels, message);
-	logs.save({type: 'quit', nick: nick, reason: reason}, {w: 0});
+	logSave({type: 'quit', nick: nick, reason: reason});
 });
 
 
