@@ -61,3 +61,49 @@
 { "type" : "message", "nick" : "crynobone", "text" : "paste your code again", "time" : { "$date" : 1367331556161 }, "_id" : { "$oid" : "517fd2e443dcc8c971000047" } }
 { "type" : "message", "nick" : "OwiecPL1986", "text" : "ok", "time" : { "$date" : 1367331559645 }, "_id" : { "$oid" : "517fd2e743dcc8c971000048" } }
 { "type" : "join", "nick" : "Abishek", "time" : { "$date" : 1367331581251 }, "_id" : { "$oid" : "517fd2fd43dcc8c971000049" } }
+{ "type" : "quit", "nick" : "shoelessone", "reason" : "Ping timeout: 252 seconds", "time" : { "$date" : 1367331639173 }, "_id" : { "$oid" : "517fd33743dcc8c97100004a" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone http://paste.laravel.com/pVE", "time" : { "$date" : 1367331641596 }, "_id" : { "$oid" : "517fd33943dcc8c97100004b" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "crynobone very very bad than", "time" : { "$date" : 1367331703275 }, "_id" : { "$oid" : "517fd37743dcc8c97100004c" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone Which country do you live?", "time" : { "$date" : 1367331706644 }, "_id" : { "$oid" : "517fd37a43dcc8c97100004d" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "OwiecPL1986: using psr-0?", "time" : { "$date" : 1367331717373 }, "_id" : { "$oid" : "517fd38543dcc8c97100004e" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "malaysia", "time" : { "$date" : 1367331726533 }, "_id" : { "$oid" : "517fd38e43dcc8c97100004f" } }
+{ "type" : "message", "nick" : "trovster", "text" : "WTH! I have return \\Redirect::route('client.contact.edit', array('client' => $client->id, 'contact' => $contact->id))->withInput()->withErrors($address->validator)->with('message.error', 'Sorry, there was an error creating this contact’s address.'); so I’m redirecting to the contact edit screen. The correct message displays. The correct form is shown, with 'update contact' button at the bottom. But my hidden type is 'contact_create'", "time" : { "$date" : 1367331727591 }, "_id" : { "$oid" : "517fd38f43dcc8c971000050" } }
+{ "type" : "message", "nick" : "trovster", "text" : "'contact_create'… what is going on here??", "time" : { "$date" : 1367331728172 }, "_id" : { "$oid" : "517fd39043dcc8c971000051" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone as auto generate \"Kwladyka\\\\DataTables\": \"src/\"", "time" : { "$date" : 1367331753480 }, "_id" : { "$oid" : "517fd3a943dcc8c971000052" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "crynobone https://github.com/jasonlewis/basset/issues/112", "time" : { "$date" : 1367331775136 }, "_id" : { "$oid" : "517fd3bf43dcc8c971000053" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "trovster: paste.laravel.com", "time" : { "$date" : 1367331785770 }, "_id" : { "$oid" : "517fd3c943dcc8c971000054" } }
+{ "type" : "join", "nick" : "AnimeCYC", "time" : { "$date" : 1367331793329 }, "_id" : { "$oid" : "517fd3d143dcc8c971000055" } }
+{ "type" : "message", "nick" : "trovster", "text" : "nickstr: What would you like me to paste?", "time" : { "$date" : 1367331799636 }, "_id" : { "$oid" : "517fd3d743dcc8c971000056" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "Form + controller", "time" : { "$date" : 1367331809076 }, "_id" : { "$oid" : "517fd3e143dcc8c971000057" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "that weird", "time" : { "$date" : 1367331812083 }, "_id" : { "$oid" : "517fd3e443dcc8c971000058" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "cause that line is too damn long", "time" : { "$date" : 1367331816698 }, "_id" : { "$oid" : "517fd3e843dcc8c971000059" } }
+{ "type" : "join", "nick" : "Darkduma", "time" : { "$date" : 1367331881815 }, "_id" : { "$oid" : "517fd42943dcc8c97100005a" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Forum Activity: Laravel 4 - Simple Tutorial http://forums.laravel.io/viewtopic.php?id=8412&action=new", "time" : { "$date" : 1367331884023 }, "_id" : { "$oid" : "517fd42c43dcc8c97100005b" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Forum Activity: Laravel Starter - Laravel 4 book? http://forums.laravel.io/viewtopic.php?id=8513&action=new", "time" : { "$date" : 1367331884140 }, "_id" : { "$oid" : "517fd42c43dcc8c97100005c" } }
+{ "type" : "message", "nick" : "trovster", "text" : "http://paste.laravel.com/pVF is the action the update lands in to. http://paste.laravel.com/pVG is the bottom of the update view.", "time" : { "$date" : 1367331903249 }, "_id" : { "$oid" : "517fd43f43dcc8c97100005d" } }
+{ "type" : "message", "nick" : "trovster", "text" : "Maybe the withInput is changing the \\Form::hidden('action', 'contact_update'); and I need to exclude it somehow?", "time" : { "$date" : 1367331940412 }, "_id" : { "$oid" : "517fd46443dcc8c97100005e" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone i am doing all like you in orchestal/support, i dont have any idea what is wrong :/", "time" : { "$date" : 1367331944721 }, "_id" : { "$oid" : "517fd46843dcc8c97100005f" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "trovster: should your form be pointing to the update controller?", "time" : { "$date" : 1367331964755 }, "_id" : { "$oid" : "517fd47c43dcc8c971000060" } }
+{ "type" : "message", "nick" : "trovster", "text" : "Yes, it is.", "time" : { "$date" : 1367331972673 }, "_id" : { "$oid" : "517fd48443dcc8c971000061" } }
+{ "type" : "join", "nick" : "wesside", "time" : { "$date" : 1367331976380 }, "_id" : { "$oid" : "517fd48843dcc8c971000062" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "you have a form for create and update", "time" : { "$date" : 1367331977219 }, "_id" : { "$oid" : "517fd48943dcc8c971000063" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "so what the use for the that action field?", "time" : { "$date" : 1367331983921 }, "_id" : { "$oid" : "517fd48f43dcc8c971000064" } }
+{ "type" : "message", "nick" : "trovster", "text" : "That *is* a good point…", "time" : { "$date" : 1367332005625 }, "_id" : { "$oid" : "517fd4a543dcc8c971000065" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Forum Activity: Increase CSRF token time http://forums.laravel.io/viewtopic.php?id=8505&action=new", "time" : { "$date" : 1367332009324 }, "_id" : { "$oid" : "517fd4a943dcc8c971000066" } }
+{ "type" : "quit", "nick" : "qwebirc54394", "reason" : "Quit: Page closed", "time" : { "$date" : 1367332016551 }, "_id" : { "$oid" : "517fd4b043dcc8c971000067" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "qwebirc54394 did you find other function to get name controller and action name?", "time" : { "$date" : 1367332025618 }, "_id" : { "$oid" : "517fd4b943dcc8c971000068" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "trovster: because you use ->withInput()", "time" : { "$date" : 1367332049971 }, "_id" : { "$oid" : "517fd4d143dcc8c971000069" } }
+{ "type" : "message", "nick" : "trovster", "text" : "crynobone: Just realised that… hmmm", "time" : { "$date" : 1367332074287 }, "_id" : { "$oid" : "517fd4ea43dcc8c97100006a" } }
+{ "type" : "quit", "nick" : "AndHeiberg", "reason" : "Quit: Computer has gone to sleep.", "time" : { "$date" : 1367332077265 }, "_id" : { "$oid" : "517fd4ed43dcc8c97100006b" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "it would populate everything from the previous submit", "time" : { "$date" : 1367332079184 }, "_id" : { "$oid" : "517fd4ef43dcc8c97100006c" } }
+{ "type" : "join", "nick" : "schwame", "time" : { "$date" : 1367332124608 }, "_id" : { "$oid" : "517fd51c43dcc8c97100006d" } }
+{ "type" : "message", "nick" : "trovster", "text" : "Yeh, gotchya. hmmm, I don't really need these 'actions' though, do I. As nickstr pointed out", "time" : { "$date" : 1367332168176 }, "_id" : { "$oid" : "517fd54843dcc8c97100006e" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone ok i found  whats wrong", "time" : { "$date" : 1367332173484 }, "_id" : { "$oid" : "517fd54d43dcc8c97100006f" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "i think is the and today... mayby i will back a few hours later ;)", "time" : { "$date" : 1367332198208 }, "_id" : { "$oid" : "517fd56643dcc8c971000070" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone big thanks for you help!", "time" : { "$date" : 1367332207685 }, "_id" : { "$oid" : "517fd56f43dcc8c971000071" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "no prob", "time" : { "$date" : 1367332213833 }, "_id" : { "$oid" : "517fd57543dcc8c971000072" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "Feel welcome in Poland :P", "time" : { "$date" : 1367332227760 }, "_id" : { "$oid" : "517fd58343dcc8c971000073" } }
+{ "type" : "message", "nick" : "crynobone", "text" : ":D", "time" : { "$date" : 1367332247054 }, "_id" : { "$oid" : "517fd59743dcc8c971000074" } }
+{ "type" : "quit", "nick" : "Wintereise", "reason" : "Ping timeout: 252 seconds", "time" : { "$date" : 1367332266222 }, "_id" : { "$oid" : "517fd5aa43dcc8c971000075" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone Whitch country do you live?", "time" : { "$date" : 1367332276823 }, "_id" : { "$oid" : "517fd5b443dcc8c971000076" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "malaysia", "time" : { "$date" : 1367332282122 }, "_id" : { "$oid" : "517fd5ba43dcc8c971000077" } }
