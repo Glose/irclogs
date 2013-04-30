@@ -10,3 +10,9 @@ $ forever start main.js
 ```bash
 $ php artisan db:seed
 ```
+
+### Compile CSS
+
+```bash
+$ compass compile
+```

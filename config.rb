@@ -17,5 +17,3 @@ relative_assets  = true
 # sass_options     = {:debug_info => true}
 
 # Extensions ------------------------------------------------------- /
-
-require 'susy'
