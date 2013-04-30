@@ -1,0 +1,63 @@
+{ "type" : "quit", "nick" : "salencebg", "reason" : "Quit: salencebg", "time" : { "$date" : 1367330526862 }, "_id" : { "$oid" : "517fcede43dcc8c97100000b" } }
+{ "type" : "message", "nick" : "qwebirc54394", "text" : "OwiecPL1986: where is currentRouteAction defined? I saw it working, but it returns me the controller name too, I just want the method name", "time" : { "$date" : 1367330528481 }, "_id" : { "$oid" : "517fcee043dcc8c97100000c" } }
+{ "type" : "quit", "nick" : "DamienC", "reason" : "Quit: My MacBook Pro has gone to sleep. ZZZzzz…", "time" : { "$date" : 1367330540532 }, "_id" : { "$oid" : "517fceec43dcc8c97100000d" } }
+{ "type" : "join", "nick" : "irclogs1", "time" : { "$date" : 1367330581688 }, "_id" : { "$oid" : "517fcf1543dcc8c97100000e" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "qwebirc54394 if i know there is no option to get only the method name. If you found it share with me :) I am using that to get ControllerName return strtolower(strstr(Route::currentRouteAction(), 'Controller@', true))", "time" : { "$date" : 1367330604773 }, "_id" : { "$oid" : "517fcf2c43dcc8c97100000f" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "You can modify that to get action name", "time" : { "$date" : 1367330614142 }, "_id" : { "$oid" : "517fcf3643dcc8c971000010" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "OptimizeServiceProvider class doesn't get downloaded with composer", "time" : { "$date" : 1367330618509 }, "_id" : { "$oid" : "517fcf3a43dcc8c971000011" } }
+{ "type" : "quit", "nick" : "irclogs1", "reason" : "Remote host closed the connection", "time" : { "$date" : 1367330659923 }, "_id" : { "$oid" : "517fcf6343dcc8c971000012" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "dcrystalj: using basset?", "time" : { "$date" : 1367330664929 }, "_id" : { "$oid" : "517fcf6843dcc8c971000013" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "what basset?", "time" : { "$date" : 1367330682189 }, "_id" : { "$oid" : "517fcf7a43dcc8c971000014" } }
+{ "type" : "message", "nick" : "qwebirc54394", "text" : "OwiecPL1986: I'm looking for the currentRouteAction definition, Can't find it.", "time" : { "$date" : 1367330695893 }, "_id" : { "$oid" : "517fcf8743dcc8c971000015" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Forum Activity: Strange session problem. http://forums.laravel.io/viewtopic.php?id=8512&action=new", "time" : { "$date" : 1367330759103 }, "_id" : { "$oid" : "517fcfc743dcc8c971000016" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone i get Notice: Use of undefined constant DataTables2 - assumed 'DataTables2' in", "time" : { "$date" : 1367330763697 }, "_id" : { "$oid" : "517fcfcb43dcc8c971000017" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "i added to app.php 'DataTables2'     => 'Kwladyka\\DataTables\\Facades\\DataTables',", "time" : { "$date" : 1367330774210 }, "_id" : { "$oid" : "517fcfd643dcc8c971000018" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "what i miss?", "time" : { "$date" : 1367330776185 }, "_id" : { "$oid" : "517fcfd843dcc8c971000019" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "have u change your facade namespace", "time" : { "$date" : 1367330798568 }, "_id" : { "$oid" : "517fcfee43dcc8c97100001a" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "crynobone what do you mean by basset?", "time" : { "$date" : 1367330800004 }, "_id" : { "$oid" : "517fcff043dcc8c97100001b" } }
+{ "type" : "quit", "nick" : "Dregond1", "reason" : "Quit: Dregond1", "time" : { "$date" : 1367330804705 }, "_id" : { "$oid" : "517fcff443dcc8c97100001c" } }
+{ "type" : "message", "nick" : "PixelWarrior", "text" : "anyone know why my composer.phar is trying to compile a bundle ive deleted?", "time" : { "$date" : 1367330806887 }, "_id" : { "$oid" : "517fcff643dcc8c97100001d" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "qwebirc54394: i am not sure something like that exist", "time" : { "$date" : 1367330807576 }, "_id" : { "$oid" : "517fcff743dcc8c97100001e" } }
+{ "type" : "quit", "nick" : "kil0byte", "reason" : "Ping timeout: 246 seconds", "time" : { "$date" : 1367330834112 }, "_id" : { "$oid" : "517fd01243dcc8c97100001f" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "crynobone i just added one helper folder that's all, but it worked until yesterday", "time" : { "$date" : 1367330845340 }, "_id" : { "$oid" : "517fd01d43dcc8c971000020" } }
+{ "type" : "join", "nick" : "dhazel", "time" : { "$date" : 1367330849374 }, "_id" : { "$oid" : "517fd02143dcc8c971000021" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "dcrystalj: got some issue with basset today, causing composer to load beta3", "time" : { "$date" : 1367330851680 }, "_id" : { "$oid" : "517fd02343dcc8c971000022" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "instead of latest dev-master", "time" : { "$date" : 1367330859958 }, "_id" : { "$oid" : "517fd02b43dcc8c971000023" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "wich file?", "time" : { "$date" : 1367330868308 }, "_id" : { "$oid" : "517fd03443dcc8c971000024" } }
+{ "type" : "join", "nick" : "its_pots", "time" : { "$date" : 1367330868424 }, "_id" : { "$oid" : "517fd03443dcc8c971000025" } }
+{ "type" : "join", "nick" : "cgagonface", "time" : { "$date" : 1367330878436 }, "_id" : { "$oid" : "517fd03e43dcc8c971000026" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "https://github.com/jasonlewis/basset", "time" : { "$date" : 1367330888517 }, "_id" : { "$oid" : "517fd04843dcc8c971000027" } }
+{ "type" : "join", "nick" : "leenug", "time" : { "$date" : 1367330932648 }, "_id" : { "$oid" : "517fd07443dcc8c971000028" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "crynobone http://paste.laravel.com/pVx this is my composer", "time" : { "$date" : 1367330946904 }, "_id" : { "$oid" : "517fd08243dcc8c971000029" } }
+{ "type" : "join", "nick" : "gkimball", "time" : { "$date" : 1367330962705 }, "_id" : { "$oid" : "517fd09243dcc8c97100002a" } }
+{ "type" : "quit", "nick" : "mygan", "reason" : "Ping timeout: 268 seconds", "time" : { "$date" : 1367330968402 }, "_id" : { "$oid" : "517fd09843dcc8c97100002b" } }
+{ "type" : "message", "nick" : "leenug", "text" : "Hey guys, I'm just getting started with L4, and having trouble routing to a controller in subdirectory, any help would be appreciated, this is my route: Route::controller('contacts', 'contacts/ContactsController');", "time" : { "$date" : 1367330991828 }, "_id" : { "$oid" : "517fd0af43dcc8c97100002c" } }
+{ "type" : "join", "nick" : "kil0byte", "time" : { "$date" : 1367330998730 }, "_id" : { "$oid" : "517fd0b643dcc8c97100002d" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "https://github.com/patricktalmadge/bootstrapper/blob/develop/composer.json#L25", "time" : { "$date" : 1367331033180 }, "_id" : { "$oid" : "517fd0d943dcc8c97100002e" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "bootstrapper load basset", "time" : { "$date" : 1367331040466 }, "_id" : { "$oid" : "517fd0e043dcc8c97100002f" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "so that probably your issue", "time" : { "$date" : 1367331050041 }, "_id" : { "$oid" : "517fd0ea43dcc8c971000030" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "dcrystalj: ^", "time" : { "$date" : 1367331079891 }, "_id" : { "$oid" : "517fd10743dcc8c971000031" } }
+{ "type" : "message", "nick" : "gkimball", "text" : "leenug: I think it's contacts.ContactsController", "time" : { "$date" : 1367331116313 }, "_id" : { "$oid" : "517fd12c43dcc8c971000032" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "hjoooo thanks", "time" : { "$date" : 1367331131311 }, "_id" : { "$oid" : "517fd13b43dcc8c971000033" } }
+{ "type" : "quit", "nick" : "MetalMatze", "reason" : "Ping timeout: 255 seconds", "time" : { "$date" : 1367331158371 }, "_id" : { "$oid" : "517fd15643dcc8c971000034" } }
+{ "type" : "message", "nick" : "leenug", "text" : "gkimball: Thanks but I tried that, also doesn't work", "time" : { "$date" : 1367331159453 }, "_id" : { "$oid" : "517fd15743dcc8c971000035" } }
+{ "type" : "join", "nick" : "dsyme|mac", "time" : { "$date" : 1367331206712 }, "_id" : { "$oid" : "517fd18643dcc8c971000036" } }
+{ "type" : "message", "nick" : "dcrystalj", "text" : "crynobone if i remove it, will this bundle still work?", "time" : { "$date" : 1367331214971 }, "_id" : { "$oid" : "517fd18e43dcc8c971000037" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "nope", "time" : { "$date" : 1367331223444 }, "_id" : { "$oid" : "517fd19743dcc8c971000038" } }
+{ "type" : "quit", "nick" : "frogprince", "reason" : "Ping timeout: 252 seconds", "time" : { "$date" : 1367331243179 }, "_id" : { "$oid" : "517fd1ab43dcc8c971000039" } }
+{ "type" : "quit", "nick" : "odde", "reason" : "Quit: Computer has gone to sleep.", "time" : { "$date" : 1367331243296 }, "_id" : { "$oid" : "517fd1ab43dcc8c97100003a" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "unfortunately everyone has to wait until jasonlewis wake up", "time" : { "$date" : 1367331248552 }, "_id" : { "$oid" : "517fd1b043dcc8c97100003b" } }
+{ "type" : "message", "nick" : "crynobone", "text" : ":P", "time" : { "$date" : 1367331250790 }, "_id" : { "$oid" : "517fd1b243dcc8c97100003c" } }
+{ "type" : "join", "nick" : "dsyme", "time" : { "$date" : 1367331258202 }, "_id" : { "$oid" : "517fd1ba43dcc8c97100003d" } }
+{ "type" : "join", "nick" : "frogprince", "time" : { "$date" : 1367331273083 }, "_id" : { "$oid" : "517fd1c943dcc8c97100003e" } }
+{ "type" : "message", "nick" : "gkimball", "text" : "leenug: It's dot syntax for sure", "time" : { "$date" : 1367331279557 }, "_id" : { "$oid" : "517fd1cf43dcc8c97100003f" } }
+{ "type" : "message", "nick" : "gkimball", "text" : "leenug: Check the naming on your controller", "time" : { "$date" : 1367331310570 }, "_id" : { "$oid" : "517fd1ee43dcc8c971000040" } }
+{ "type" : "join", "nick" : "kulafihi", "time" : { "$date" : 1367331325346 }, "_id" : { "$oid" : "517fd1fd43dcc8c971000041" } }
+{ "type" : "join", "nick" : "shoelessone", "time" : { "$date" : 1367331390184 }, "_id" : { "$oid" : "517fd23e43dcc8c971000042" } }
+{ "type" : "message", "nick" : "leenug", "text" : "gkimball: Class ContactsController within the file controllers/contacts/ContactsController.php", "time" : { "$date" : 1367331415904 }, "_id" : { "$oid" : "517fd25743dcc8c971000043" } }
+{ "type" : "message", "nick" : "gkimball", "text" : "leenug: This should help you http://stackoverflow.com/questions/14504082/route-to-controller-in-subfolder-not-working-in-laravel-4", "time" : { "$date" : 1367331421574 }, "_id" : { "$oid" : "517fd25d43dcc8c971000044" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Forum Activity: Increase CSRF token time http://forums.laravel.io/viewtopic.php?id=8505&action=new", "time" : { "$date" : 1367331509001 }, "_id" : { "$oid" : "517fd2b543dcc8c971000045" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone stil i have Notice: Use of undefined constant DataTables2 - assumed 'DataTables2' in  ...", "time" : { "$date" : 1367331541123 }, "_id" : { "$oid" : "517fd2d543dcc8c971000046" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "paste your code again", "time" : { "$date" : 1367331556161 }, "_id" : { "$oid" : "517fd2e443dcc8c971000047" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "ok", "time" : { "$date" : 1367331559645 }, "_id" : { "$oid" : "517fd2e743dcc8c971000048" } }
+{ "type" : "join", "nick" : "Abishek", "time" : { "$date" : 1367331581251 }, "_id" : { "$oid" : "517fd2fd43dcc8c971000049" } }
