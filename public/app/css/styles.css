@@ -1,9 +1,9 @@
 body {
-  background-color: #131a22;
-  color: #95A5A6;
-  font-family: "Ubuntu Mono", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 1rem;
-  font-weight: 100; }
+  background-color: #222222;
+  color: #ccc;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 12px;
+  line-height: 16px; }
 
 .header {
   -webkit-transition: 0.3s all;
@@ -15,18 +15,25 @@ body {
   box-sizing: border-box;
   padding: 1rem;
   position: fixed;
-  background-color: #131a22;
+  background-color: #222222;
   width: 100%;
   color: white; }
   .header h1 {
     margin: 0;
     padding: 0;
     line-height: 1;
-    text-transform: lowercase;
     font-weight: 100;
     letter-spacing: -.05em; }
     .header h1 small {
-      color: #e92c0e; }
+      color: #d69f20; }
+
+.logo {
+  opacity: 0.8;
+  float: right;
+  margin-bottom: 0.3em; }
+
+.logo:hover {
+  opacity: 1; }
 
 .content {
   padding: 2rem; }
@@ -35,10 +42,14 @@ body {
   max-width: 75rem; }
 
 .log-entry {
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  line-height: 1rem; }
 
 .log-entry-username {
-  color: #f39c12; }
+  color: #db613b; }
+
+.log-entry-time {
+  color: #777777; }
 
 .log-entry-quit,
 .log-entry-join {

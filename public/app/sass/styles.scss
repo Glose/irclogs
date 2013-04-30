@@ -9,13 +9,13 @@
 	@return lighten(black, $lightness);
 }
 
-$orange: #F39C12;
-$dark-orange: #F35137;
+$orange: #DB613B;
+$dark-orange: #E3B446;
 $dark-blue: darken(#2C3E50, 14);
 
-$background-color: $dark-blue;
+$background-color: #222;
 
-$font-sans: 'Ubuntu Mono', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+$font-sans: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// SCAFFOLDING ////////////////////////////
@@ -23,10 +23,10 @@ $font-sans: 'Ubuntu Mono', Monaco, "Bitstream Vera Sans Mono", "Lucida Console",
 
 body {
 	background-color: $background-color;
-	color: #95A5A6;
+	color: #ccc;
 	font-family: $font-sans;
-	font-size: 1rem;
-	font-weight: 100;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -46,7 +46,6 @@ body {
 		margin: 0;
 		padding: 0;
 		line-height: 1;
-		text-transform: lowercase;
 		font-weight: 100;
 		letter-spacing: -.05em;
 
@@ -54,6 +53,16 @@ body {
 			color: darken($dark-orange, 10);
 		}
 	}
+}
+
+.logo {
+	opacity: 0.8;
+	float: right;
+	margin-bottom: 0.3em;
+}
+
+.logo:hover {
+	opacity:1;
 }
 
 .content {
@@ -66,10 +75,15 @@ body {
 
 .log-entry {
 	margin-bottom: .5rem;
+	line-height: 1rem;
 }
 
 .log-entry-username {
 	color: $orange;
+}
+
+.log-entry-time {
+	color: rgb(119, 119, 119);
 }
 
 .log-entry-quit,
