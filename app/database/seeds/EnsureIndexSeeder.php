@@ -5,7 +5,8 @@ class EnsureIndexes extends Seeder
   public function run()
   {
     Log::ensureIndex(array(
-      'text' => 'text'
+      'text' => 'text',
+      'time' => 1,
     ));
   }
 }
