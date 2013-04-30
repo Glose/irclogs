@@ -1,6 +1,6 @@
 {
 	"require": {
-		"laravel/framework": "4.0.*",
+		"laravel/framework": "dev-master#aa9d374c8451576356b792c193eceefc8d0a96fa",
 		"julien-c/mongovel": "dev-master"
 	},
 	"autoload": {

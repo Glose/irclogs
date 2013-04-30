@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "73a0034bd3d243367f04a06a88129315",
+    "hash": "ce32a26150489438e056d55f8dd522d1",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -621,12 +621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/julien-c/mongovel.git",
-                "reference": "062db24e37d5524dd65b8bf9b3a94d07032409e2"
+                "reference": "4d7bf1a1a9fc0d5d41e01f2d435a200b7d366304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/julien-c/mongovel/zipball/062db24e37d5524dd65b8bf9b3a94d07032409e2",
-                "reference": "062db24e37d5524dd65b8bf9b3a94d07032409e2",
+                "url": "https://api.github.com/repos/julien-c/mongovel/zipball/4d7bf1a1a9fc0d5d41e01f2d435a200b7d366304",
+                "reference": "4d7bf1a1a9fc0d5d41e01f2d435a200b7d366304",
                 "shasum": ""
             },
             "require": {
@@ -665,7 +665,7 @@
                 "mongo",
                 "mongodb"
             ],
-            "time": "2013-04-25 11:06:44"
+            "time": "2013-04-30 14:44:53"
         },
         {
             "name": "laravel/framework",
@@ -673,12 +673,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "52365e01300a8b24af1e9079c3f1b9ec5c68b534"
+                "reference": "aa9d374c8451576356b792c193eceefc8d0a96fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/52365e01300a8b24af1e9079c3f1b9ec5c68b534",
-                "reference": "52365e01300a8b24af1e9079c3f1b9ec5c68b534",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6976d7d9b8eb3717a34cc3bc4411feb792cd0d0c",
+                "reference": "aa9d374c8451576356b792c193eceefc8d0a96fa",
                 "shasum": ""
             },
             "require": {
@@ -775,7 +775,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2013-04-30 14:02:13"
+            "time": "2013-04-26 18:06:41"
         },
         {
             "name": "monolog/monolog",
@@ -1807,6 +1807,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "laravel/framework": 20,
         "julien-c/mongovel": 20
     },
     "platform": [
