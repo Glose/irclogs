@@ -1,4 +1,6 @@
 
+@import "compass";
+
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////// HELPERS /////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -7,27 +9,30 @@
 	@return lighten(black, $lightness);
 }
 
-$dark-green: #00BD9C;
-$light-blue: #2C97DE;
-$dark-blue: #33485F;
-$font-sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$orange: #F39C12;
+$dark-blue: darken(#2C3E50, 14);
+
+$background-color: $dark-blue;
+
+$font-sans: 'Ubuntu Mono', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// SCAFFOLDING ////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
 body {
-	background-color: white;
-	color: grey(30);
+	background-color: $background-color;
+	color: #95A5A6;
 	font-family: $font-sans;
 	font-size: 1rem;
+	font-weight: 100;
 }
 
 input[type=search] {
 	box-shadow: none;
 	font-family: $font-sans;
 	font-size: 1rem;
-	border: 2px solid lighten($dark-blue, 20);
+	border: 2px solid lighten($background-color, 20);
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -35,15 +40,21 @@ input[type=search] {
 //////////////////////////////////////////////////////////////////////
 
 .header {
+	@include box-sizing(border-box);
 	padding: 1rem;
 	color: white;
-	background-color: $dark-blue;
-	position: relative;
+	background-color: lighten($background-color, 3);
+	position: fixed;
+	width: 100%;
 
 	h1 {
 		margin: 0;
 		padding: 0;
 		line-height: 1;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		text-transform: lowercase;
+		font-weight: 900;
+		letter-spacing: -.05em;
 	}
 
 	form {
@@ -67,11 +78,11 @@ input[type=search] {
 }
 
 .log-entry-username {
-	color: $dark-green;
+	color: $orange;
 }
 
 .log-entry-quit,
 .log-entry-join {
 	font-style: italic;
-	color: $light-blue;
+	color: #34495E;
 }

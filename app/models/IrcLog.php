@@ -17,4 +17,14 @@ class IrcLog extends Model
 			'message'  => $this->text,
 		));
 	}
+
+	/** 
+	 * Returns the hour of the entry
+	 *
+	 * @return  string
+	 */
+	public function getHour()
+	{
+		return date('H:s', $this->time->sec);
+	}
 }

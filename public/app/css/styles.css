@@ -1,24 +1,33 @@
 body {
-  background-color: white;
-  color: #4d4d4d;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem; }
+  background-color: #131a22;
+  color: #95A5A6;
+  font-family: "Ubuntu Mono", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 1rem;
+  font-weight: 100; }
 
 input[type=search] {
   box-shadow: none;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu Mono", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 1rem;
-  border: 2px solid #577aa1; }
+  border: 2px solid #374d64; }
 
 .header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 1rem;
   color: white;
-  background-color: #33485f;
-  position: relative; }
+  background-color: #18222c;
+  position: fixed;
+  width: 100%; }
   .header h1 {
     margin: 0;
     padding: 0;
-    line-height: 1; }
+    line-height: 1;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: lowercase;
+    font-weight: 900;
+    letter-spacing: -.05em; }
   .header form {
     position: absolute;
     top: 1.2rem;
@@ -34,9 +43,9 @@ input[type=search] {
   margin-bottom: .5rem; }
 
 .log-entry-username {
-  color: #00bd9c; }
+  color: #f39c12; }
 
 .log-entry-quit,
 .log-entry-join {
   font-style: italic;
-  color: #2c97de; }
+  color: #34495E; }
