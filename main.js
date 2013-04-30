@@ -6,13 +6,22 @@ var client = new irc.Client('irc.freenode.net', 'irclogs', {
 });
 
 
-client.addListener('message', function (from, to, message) {
-	console.log(from + ' => ' + to + ': ' + message);
+client.addListener('message', function (nick, to, text, message) {
+	console.log(from + ' => ' + to + ': ' + text);
 });
 
 client.addListener('join', function (channel, nick, message) {
 	console.log('JOIN', channel, nick, message);
 });
+
+client.addListener('part', function (channel, nick, reason, message) {
+	console.log('PART', channel, nick, reason, message);
+});
+
+client.addListener('quit', function (nick, reason, channels, message) {
+	console.log('QUIT', nick, reason, channels, message);
+});
+
 
 ////////////////////////////////////////////////////////////////////
 /////////////////////////// ERROR HANDLING /////////////////////////
