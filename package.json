@@ -13,5 +13,8 @@
   "author": "Julien Chaumond",
   "license": "BSD",
   "readmeFilename": "README.md",
-  "gitHead": "074b3d25541b4cdb01b027f58a8d39538d63c5b2"
+  "gitHead": "074b3d25541b4cdb01b027f58a8d39538d63c5b2",
+  "dependencies": {
+    "irc": "~0.3.6"
+  }
 }
