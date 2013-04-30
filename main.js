@@ -11,7 +11,7 @@ var logs = mongojs('irclogs').collection('logs');
 
 var logSave = function(hash) {
 	console.log(hash);
-	hash.time = new IsoDate;
+	hash.time = new Date;
 	logs.save(hash, {w: 0});
 }
 
