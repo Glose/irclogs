@@ -107,3 +107,71 @@
 { "type" : "quit", "nick" : "Wintereise", "reason" : "Ping timeout: 252 seconds", "time" : { "$date" : 1367332266222 }, "_id" : { "$oid" : "517fd5aa43dcc8c971000075" } }
 { "type" : "message", "nick" : "OwiecPL1986", "text" : "crynobone Whitch country do you live?", "time" : { "$date" : 1367332276823 }, "_id" : { "$oid" : "517fd5b443dcc8c971000076" } }
 { "type" : "message", "nick" : "crynobone", "text" : "malaysia", "time" : { "$date" : 1367332282122 }, "_id" : { "$oid" : "517fd5ba43dcc8c971000077" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "unfamous", "time" : { "$date" : 1367332297405 }, "_id" : { "$oid" : "517fd5c943dcc8c971000078" } }
+{ "type" : "message", "nick" : "crynobone", "text" : ":P", "time" : { "$date" : 1367332298248 }, "_id" : { "$oid" : "517fd5ca43dcc8c971000079" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "oh...its too far from me...", "time" : { "$date" : 1367332317582 }, "_id" : { "$oid" : "517fd5dd43dcc8c97100007a" } }
+{ "type" : "quit", "nick" : "Abishek", "reason" : "Ping timeout: 245 seconds", "time" : { "$date" : 1367332326270 }, "_id" : { "$oid" : "517fd5e643dcc8c97100007b" } }
+{ "type" : "quit", "nick" : "dcrystalj", "reason" : "Ping timeout: 268 seconds", "time" : { "$date" : 1367332337397 }, "_id" : { "$oid" : "517fd5f143dcc8c97100007c" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "dont care... many people dont know where Poland is...", "time" : { "$date" : 1367332340878 }, "_id" : { "$oid" : "517fd5f443dcc8c97100007d" } }
+{ "type" : "message", "nick" : "dsyme|mac", "text" : "good morning", "time" : { "$date" : 1367332387803 }, "_id" : { "$oid" : "517fd62343dcc8c97100007e" } }
+{ "type" : "join", "nick" : "Wintereise", "time" : { "$date" : 1367332397602 }, "_id" : { "$oid" : "517fd62d43dcc8c97100007f" } }
+{ "type" : "message", "nick" : "dsyme|mac", "text" : "waking up to a nice day, i hope composer is playing nice with private repos again.", "time" : { "$date" : 1367332409186 }, "_id" : { "$oid" : "517fd63943dcc8c971000080" } }
+{ "type" : "message", "nick" : "meow-", "text" : "I am having a hard time figuring pagination out. Could someone help me with http://paste.laravel.com/pVu please?", "time" : { "$date" : 1367332425591 }, "_id" : { "$oid" : "517fd64943dcc8c971000081" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Forum Activity: Strange session problem. http://forums.laravel.io/viewtopic.php?id=8512&action=new", "time" : { "$date" : 1367332509362 }, "_id" : { "$oid" : "517fd69d43dcc8c971000082" } }
+{ "type" : "join", "nick" : "iEatChildren_", "time" : { "$date" : 1367332540372 }, "_id" : { "$oid" : "517fd6bc43dcc8c971000083" } }
+{ "type" : "join", "nick" : "sdeinum", "time" : { "$date" : 1367332547454 }, "_id" : { "$oid" : "517fd6c343dcc8c971000084" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Good morning sdeinum! (English)", "time" : { "$date" : 1367332547668 }, "_id" : { "$oid" : "517fd6c343dcc8c971000085" } }
+{ "type" : "join", "nick" : "Lanz", "time" : { "$date" : 1367332549348 }, "_id" : { "$oid" : "517fd6c543dcc8c971000086" } }
+{ "type" : "quit", "nick" : "pushpak", "reason" : "Read error: Connection reset by peer", "time" : { "$date" : 1367332570425 }, "_id" : { "$oid" : "517fd6da43dcc8c971000087" } }
+{ "type" : "quit", "nick" : "iEatChildren", "reason" : "Disconnected by services", "time" : { "$date" : 1367332570672 }, "_id" : { "$oid" : "517fd6da43dcc8c971000088" } }
+{ "type" : "join", "nick" : "pushpak", "time" : { "$date" : 1367332578298 }, "_id" : { "$oid" : "517fd6e243dcc8c971000089" } }
+{ "type" : "quit", "nick" : "Carsekyx", "reason" : "Quit: You can break my heart but you can't break my swag", "time" : { "$date" : 1367332592537 }, "_id" : { "$oid" : "517fd6f043dcc8c97100008a" } }
+{ "type" : "message", "nick" : "OwiecPL1986", "text" : "bye all!", "time" : { "$date" : 1367332603760 }, "_id" : { "$oid" : "517fd6fb43dcc8c97100008b" } }
+{ "type" : "quit", "nick" : "OwiecPL1986", "reason" : "Quit: Man who run behind car get exhausted", "time" : { "$date" : 1367332609913 }, "_id" : { "$oid" : "517fd70143dcc8c97100008c" } }
+{ "type" : "join", "nick" : "Jaecar_", "time" : { "$date" : 1367332614719 }, "_id" : { "$oid" : "517fd70643dcc8c97100008d" } }
+{ "type" : "join", "nick" : "[1]iEatChildren", "time" : { "$date" : 1367332615732 }, "_id" : { "$oid" : "517fd70743dcc8c97100008e" } }
+{ "type" : "join", "nick" : "tom___", "time" : { "$date" : 1367332630965 }, "_id" : { "$oid" : "517fd71643dcc8c97100008f" } }
+{ "type" : "join", "nick" : "dallen", "time" : { "$date" : 1367332669396 }, "_id" : { "$oid" : "517fd73d43dcc8c971000090" } }
+{ "type" : "quit", "nick" : "AladinBouzerd_", "reason" : "Ping timeout: 240 seconds", "time" : { "$date" : 1367332694715 }, "_id" : { "$oid" : "517fd75643dcc8c971000091" } }
+{ "type" : "join", "nick" : "mynameis", "time" : { "$date" : 1367332695839 }, "_id" : { "$oid" : "517fd75743dcc8c971000092" } }
+{ "type" : "join", "nick" : "AladinBouzerd", "time" : { "$date" : 1367332707719 }, "_id" : { "$oid" : "517fd76343dcc8c971000093" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "meow-: people might able to help if they understand the problem, cause i can't even after third time looking at those code", "time" : { "$date" : 1367332708634 }, "_id" : { "$oid" : "517fd76443dcc8c971000094" } }
+{ "type" : "message", "nick" : "PixelWarrior", "text" : "i have an issue where all my Html::script and Html:style are automatically commented out", "time" : { "$date" : 1367332921707 }, "_id" : { "$oid" : "517fd83943dcc8c971000095" } }
+{ "type" : "message", "nick" : "PixelWarrior", "text" : "anyone know what's causing it?", "time" : { "$date" : 1367332933191 }, "_id" : { "$oid" : "517fd84543dcc8c971000096" } }
+{ "type" : "message", "nick" : "tom___", "text" : "Hi! I'm making the move from CI to L4. Really enjoying it so far, especially Eloquent. I've got a model that allows users to vote on projects within my app and I'm using Model Events to prevent double votes. It appears to be working, but would anyone mind taking a look at: http://paste.laravel.com/pVL and seeing if there is anything I could / should improve?", "time" : { "$date" : 1367332961398 }, "_id" : { "$oid" : "517fd86143dcc8c971000097" } }
+{ "type" : "message", "nick" : "meow-", "text" : "crynobone i have a form which posts to an action which gets a pagination from the database to make a view", "time" : { "$date" : 1367332962006 }, "_id" : { "$oid" : "517fd86243dcc8c971000098" } }
+{ "type" : "message", "nick" : "tom___", "text" : "Thanks :)", "time" : { "$date" : 1367332965056 }, "_id" : { "$oid" : "517fd86543dcc8c971000099" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "meow-: and whats the problem?", "time" : { "$date" : 1367332976280 }, "_id" : { "$oid" : "517fd87043dcc8c97100009a" } }
+{ "type" : "message", "nick" : "meow-", "text" : "if i click page 2 it goes to a blank page", "time" : { "$date" : 1367333028621 }, "_id" : { "$oid" : "517fd8a443dcc8c97100009b" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "because page 2 is a get", "time" : { "$date" : 1367333042335 }, "_id" : { "$oid" : "517fd8b243dcc8c97100009c" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "why would you use post for pagination?", "time" : { "$date" : 1367333052176 }, "_id" : { "$oid" : "517fd8bc43dcc8c97100009d" } }
+{ "type" : "join", "nick" : "DanGreaves", "time" : { "$date" : 1367333054417 }, "_id" : { "$oid" : "517fd8be43dcc8c97100009e" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Forum Activity: Aliasing of URL to another class doesn't catch all usages http://forums.laravel.io/viewtopic.php?id=8514&action=new", "time" : { "$date" : 1367333059634 }, "_id" : { "$oid" : "517fd8c343dcc8c97100009f" } }
+{ "type" : "message", "nick" : "Bulk", "text" : "meow-, crynobone - I don't see anything getting saved to a database", "time" : { "$date" : 1367333079643 }, "_id" : { "$oid" : "517fd8d743dcc8c9710000a0" } }
+{ "type" : "message", "nick" : "Bulk", "text" : "how do you expect to paginate..?", "time" : { "$date" : 1367333086836 }, "_id" : { "$oid" : "517fd8de43dcc8c9710000a1" } }
+{ "type" : "message", "nick" : "meow-", "text" : "should i make the form submit using get instead?", "time" : { "$date" : 1367333100949 }, "_id" : { "$oid" : "517fd8ec43dcc8c9710000a2" } }
+{ "type" : "message", "nick" : "k_89", "text" : "tom___, yeah .. i'd say avoid putting it in there , that stuff should be part of your validation logic", "time" : { "$date" : 1367333108330 }, "_id" : { "$oid" : "517fd8f443dcc8c9710000a3" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "You never return a view on post", "time" : { "$date" : 1367333110801 }, "_id" : { "$oid" : "517fd8f643dcc8c9710000a4" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "never ever", "time" : { "$date" : 1367333112616 }, "_id" : { "$oid" : "517fd8f843dcc8c9710000a5" } }
+{ "type" : "message", "nick" : "nickstr", "text" : "ever", "time" : { "$date" : 1367333114106 }, "_id" : { "$oid" : "517fd8fa43dcc8c9710000a6" } }
+{ "type" : "message", "nick" : "meow-", "text" : "oh ok", "time" : { "$date" : 1367333130402 }, "_id" : { "$oid" : "517fd90a43dcc8c9710000a7" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "i assume this is a search form", "time" : { "$date" : 1367333144469 }, "_id" : { "$oid" : "517fd91843dcc8c9710000a8" } }
+{ "type" : "join", "nick" : "AladinBouzerd_", "time" : { "$date" : 1367333146674 }, "_id" : { "$oid" : "517fd91a43dcc8c9710000a9" } }
+{ "type" : "join", "nick" : "shoelessone", "time" : { "$date" : 1367333150110 }, "_id" : { "$oid" : "517fd91e43dcc8c9710000aa" } }
+{ "type" : "message", "nick" : "meow-", "text" : "yes", "time" : { "$date" : 1367333152248 }, "_id" : { "$oid" : "517fd92043dcc8c9710000ab" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "so using get make more sense", "time" : { "$date" : 1367333153280 }, "_id" : { "$oid" : "517fd92143dcc8c9710000ac" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "since you need to append the search result on page 2….n as well", "time" : { "$date" : 1367333171989 }, "_id" : { "$oid" : "517fd93343dcc8c9710000ad" } }
+{ "type" : "message", "nick" : "DanGreaves", "text" : "is there any way of telling Mockery to return an object. E.g. I want a user provider to return a user object. \"andReturn\" only seems to accept a string?", "time" : { "$date" : 1367333222899 }, "_id" : { "$oid" : "517fd96643dcc8c9710000ae" } }
+{ "type" : "message", "nick" : "meow-", "text" : "so i need to append the query string of the pagination link?", "time" : { "$date" : 1367333244388 }, "_id" : { "$oid" : "517fd97c43dcc8c9710000af" } }
+{ "type" : "quit", "nick" : "Guruuu", "reason" : "Ping timeout: 252 seconds", "time" : { "$date" : 1367333255357 }, "_id" : { "$oid" : "517fd98743dcc8c9710000b0" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "$aUserObject; $mock->…->andReturn($aUserObject);", "time" : { "$date" : 1367333262999 }, "_id" : { "$oid" : "517fd98e43dcc8c9710000b1" } }
+{ "type" : "message", "nick" : "crynobone", "text" : "meow-: yup", "time" : { "$date" : 1367333272603 }, "_id" : { "$oid" : "517fd99843dcc8c9710000b2" } }
+{ "type" : "quit", "nick" : "AladinBouzerd", "reason" : "Ping timeout: 240 seconds", "time" : { "$date" : 1367333273594 }, "_id" : { "$oid" : "517fd99943dcc8c9710000b3" } }
+{ "type" : "message", "nick" : "tom___", "text" : "k_89, thanks. i was thinking that before, and I know there's a unique validation method, but I wasn't sure how to check on two values (project_id and user_id, obviously)", "time" : { "$date" : 1367333287758 }, "_id" : { "$oid" : "517fd9a743dcc8c9710000b4" } }
+{ "type" : "message", "nick" : "DanGreaves", "text" : "well that was easy crynobone, thanks!", "time" : { "$date" : 1367333301353 }, "_id" : { "$oid" : "517fd9b543dcc8c9710000b5" } }
+{ "type" : "message", "nick" : "Rommie", "text" : "Forum Activity: ::create - only in models? http://forums.laravel.io/viewtopic.php?id=8515&action=new", "time" : { "$date" : 1367333309297 }, "_id" : { "$oid" : "517fd9bd43dcc8c9710000b6" } }
+{ "type" : "quit", "nick" : "cgagonface", "reason" : "Remote host closed the connection", "time" : { "$date" : 1367333332458 }, "_id" : { "$oid" : "517fd9d443dcc8c9710000b7" } }
+{ "type" : "message", "nick" : "meow-", "text" : "and it should work after that? or do i still need to write some code to make it work?", "time" : { "$date" : 1367333340384 }, "_id" : { "$oid" : "517fd9dc43dcc8c9710000b8" } }
+{ "type" : "message", "nick" : "k_89", "text" : "tom___, you can extend validator objects and add ad-hoc rules specifi to your condition !!", "time" : { "$date" : 1367333359752 }, "_id" : { "$oid" : "517fd9ef43dcc8c9710000b9" } }
+{ "type" : "join", "nick" : "nathanr", "time" : { "$date" : 1367333400250 }, "_id" : { "$oid" : "517fda1843dcc8c9710000ba" } }
+{ "type" : "message", "nick" : "meow-", "text" : "so i submit the form which send get with query string.. the get action queries the db and returns a view with the paginated queries. all i need to do is append the query string and when i click on page 2 it will know what to do?", "time" : { "$date" : 1367333412068 }, "_id" : { "$oid" : "517fda2443dcc8c9710000bb" } }
