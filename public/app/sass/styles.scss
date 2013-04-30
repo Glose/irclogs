@@ -1,0 +1,20 @@
+
+$font-sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body {
+	background-color: lighten(black, 20);
+	color: white;
+	font-family: $font-sans;
+}
+
+.header {
+	padding: 1rem;
+	background-color: rgba(white, .05);
+	h1 {
+		margin: 0;
+	}
+}
+
+#{headings()} {
+	font-weight: 300;
+}

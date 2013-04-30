@@ -132,14 +132,8 @@ return array(
 		'default' => array(
 			'host'     => 'localhost',
 			'port'     => 27017,
-			'database' => 'reaaad',
+			'database' => 'irclogs',
 		),
-		
-		'api-tests' => array(
-			'host'     => 'localhost',
-			'port'     => 27017,
-			'database' => 'reaaad-tests',
-		)
 	),
 
 );

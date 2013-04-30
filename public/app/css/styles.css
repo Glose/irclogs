@@ -1,0 +1,13 @@
+body {
+  background-color: #333333;
+  color: white;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.header {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05); }
+  .header h1 {
+    margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
