@@ -15,8 +15,8 @@ class LogsController extends BaseController
 	{
 		$q = Input::get('q');
 		
-		$search = Mongovel::db()->command(array('text' => 'logs', 'search' => $q));
+		$logs = IrcLog::textSearch($q);
 		
-		var_dump($search);
+		return Response::json($logs);
 	}
 }
