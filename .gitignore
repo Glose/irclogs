@@ -1,0 +1,6 @@
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.sass-cache
+/vendor
+/node_modules
