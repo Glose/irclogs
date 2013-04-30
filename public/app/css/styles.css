@@ -5,33 +5,28 @@ body {
   font-size: 1rem;
   font-weight: 100; }
 
-input[type=search] {
-  box-shadow: none;
-  font-family: "Ubuntu Mono", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 1rem;
-  border: 2px solid #374d64; }
-
 .header {
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 1rem;
-  color: white;
-  background-color: #18222c;
   position: fixed;
-  width: 100%; }
+  background-color: #131a22;
+  width: 100%;
+  color: white; }
   .header h1 {
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: lowercase;
-    font-weight: 900;
+    font-weight: 100;
     letter-spacing: -.05em; }
-  .header form {
-    position: absolute;
-    top: 1.2rem;
-    right: 1.2rem; }
+    .header h1 small {
+      color: #e92c0e; }
 
 .content {
   padding: 2rem; }

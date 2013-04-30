@@ -10,6 +10,7 @@
 }
 
 $orange: #F39C12;
+$dark-orange: #F35137;
 $dark-blue: darken(#2C3E50, 14);
 
 $background-color: $dark-blue;
@@ -28,40 +29,30 @@ body {
 	font-weight: 100;
 }
 
-input[type=search] {
-	box-shadow: none;
-	font-family: $font-sans;
-	font-size: 1rem;
-	border: 2px solid lighten($background-color, 20);
-}
-
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////// LAYOUT //////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
 .header {
+	@include transition(.3s all);
 	@include box-sizing(border-box);
 	padding: 1rem;
-	color: white;
-	background-color: lighten($background-color, 3);
 	position: fixed;
+	background-color: $background-color;
 	width: 100%;
+	color: white;
 
 	h1 {
 		margin: 0;
 		padding: 0;
 		line-height: 1;
-		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		text-transform: lowercase;
-		font-weight: 900;
+		font-weight: 100;
 		letter-spacing: -.05em;
-	}
 
-	form {
-		$offset: 1.2rem;
-		position: absolute;
-		top: $offset;
-		right: $offset;
+		small {
+			color: darken($dark-orange, 10);
+		}
 	}
 }
 
