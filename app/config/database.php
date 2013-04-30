@@ -121,4 +121,25 @@ return array(
 
 	),
 
+	/*
+	|--------------------------------------------------------------------------
+	| MongoDB
+	|--------------------------------------------------------------------------
+	*/
+
+	'mongodb' => array(
+
+		'default' => array(
+			'host'     => 'localhost',
+			'port'     => 27017,
+			'database' => 'reaaad',
+		),
+		
+		'api-tests' => array(
+			'host'     => 'localhost',
+			'port'     => 27017,
+			'database' => 'reaaad-tests',
+		)
+	),
+
 );

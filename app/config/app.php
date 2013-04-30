@@ -113,6 +113,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		'Mongovel\MongovelServiceProvider',
+
 	),
 
 	/*
