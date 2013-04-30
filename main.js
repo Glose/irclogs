@@ -7,7 +7,7 @@ var client = new irc.Client('irc.freenode.net', 'irclogs', {
 
 
 client.addListener('message', function (nick, to, text, message) {
-	console.log(from + ' => ' + to + ': ' + text);
+	console.log(nick + ' => ' + to + ': ' + text);
 });
 
 client.addListener('join', function (channel, nick, message) {
