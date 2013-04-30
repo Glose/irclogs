@@ -1,0 +1,17 @@
+{
+  "name": "irclogs",
+  "version": "0.0.0",
+  "description": "IRC logger",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reaaad/irclogs.git"
+  },
+  "author": "Julien Chaumond",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "074b3d25541b4cdb01b027f58a8d39538d63c5b2"
+}
