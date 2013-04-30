@@ -1,13 +1,29 @@
 body {
-  background-color: #333333;
-  color: white;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  background-color: white;
+  color: #4d4d4d;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem; }
 
 .header {
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.05); }
+  color: white;
+  background-color: #33485f; }
   .header h1 {
     margin: 0; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+.content {
+  padding: 2rem; }
+
+.logs {
+  width: 50%; }
+
+.log-entry {
+  margin-bottom: .5rem; }
+
+.log-entry-username {
+  color: #00bd9c; }
+
+.log-entry-quit,
+.log-entry-join {
+  font-style: italic;
+  color: #2c97de; }

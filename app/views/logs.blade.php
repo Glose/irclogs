@@ -1,7 +1,9 @@
 @extends('global')
 
 @section('content')
-	@foreach ($logs as $log)
-		{{ $log->type }} - {{ $log->nick }} : {{ $log->text }}<br>
-	@endforeach
+	<ul class="unstyled logs">
+		@foreach ($logs as $log)
+			<li class="log-entry log-entry-{{ $log->type }}">{{ $log->getText() }}</li>
+		@endforeach
+	</ul>
 @stop
