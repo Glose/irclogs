@@ -25,6 +25,6 @@ class IrcLog extends Model
 	 */
 	public function getHour()
 	{
-		return date('H:s', $this->time->sec);
+		return date('H:i', $this->time->sec);
 	}
 }
