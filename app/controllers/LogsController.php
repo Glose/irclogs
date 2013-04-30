@@ -2,7 +2,7 @@
 
 class LogsController extends BaseController
 {
-	public function getIndex()
+	public function index()
 	{
 		$logs = IrcLog::find();
 

@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', 'LogsController@getIndex');
+Route::get('/', 'LogsController@index');
 
 Route::get('search', 'LogsController@search');
