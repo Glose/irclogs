@@ -1,6 +1,6 @@
 html {
   font-size: 75%;
-  line-height: 1.25em; }
+  line-height: 0.25em; }
 
 html, body {
   background-color: #222222;
@@ -9,7 +9,9 @@ html, body {
 
 body {
   color: #ccc;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; }
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 1em;
+  line-height: 1.25em; }
 
 .header {
   -webkit-box-sizing: border-box;
@@ -28,7 +30,6 @@ body {
 .header-search {
   margin: 0;
   padding: 1.5rem;
-  line-height: 1;
   font-weight: 100;
   letter-spacing: -.05em;
   width: 100%;
@@ -88,7 +89,6 @@ body {
     color: #db613b; }
 
 .logs {
-  max-width: 75rem;
   list-style-type: none;
   padding: 0;
   margin: 0; }
@@ -100,8 +100,7 @@ body {
     text-decoration: none; }
 
 .log-entry {
-  margin-bottom: .5rem;
-  line-height: 1rem; }
+  margin-bottom: .5rem; }
 
 .log-entry-username {
   color: #db613b; }

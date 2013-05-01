@@ -19,7 +19,7 @@ $font-mono: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, mono
 
 $base-font-size   : 12px;
 $line-height      : 1.25;
-$base-line-height : $base-font-size * $line-height;
+$base-line-height : $base-font-size * ($line-height - 1);
 
 // Layout ---------------------------------------------------------- /
 
