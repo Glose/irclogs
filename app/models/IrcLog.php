@@ -5,7 +5,7 @@ class IrcLog extends Model
 {
 	protected $collectionName = 'logs';
 
-	/** 
+	/**
 	 * Get the log's message
 	 *
 	 * @return  string
@@ -18,7 +18,7 @@ class IrcLog extends Model
 		));
 	}
 
-	/** 
+	/**
 	 * Returns a DateTime object from the hour
 	 */
 	public function getDateTime()
@@ -26,7 +26,7 @@ class IrcLog extends Model
 		return new DateTime('@'.$this->time->sec);
 	}
 
-	/** 
+	/**
 	 * Returns the hour of the entry
 	 *
 	 * @return  string
@@ -38,7 +38,7 @@ class IrcLog extends Model
 	
 	/**
 	 * Returns the day of the entry
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getDay()
