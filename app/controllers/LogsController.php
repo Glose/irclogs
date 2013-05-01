@@ -10,6 +10,8 @@ class LogsController extends BaseController
 	 */
 	public function index($date = null, $time = null)
 	{
+		Log::error($date);
+		Log::error($time);
 		$datetime = null;
 		if ($time && $date) {
 			$datetime = DateTime::createFromFormat(static::$TIME_FORMAT, $date.' '.$time);
