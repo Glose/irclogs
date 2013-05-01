@@ -25,7 +25,7 @@ class LogsController extends BaseController
 			);
 		}
 		
-		$logs = IrcLog::find($filter)->limit(200);
+		$logs = IrcLog::find($filter)->sort(array('time' => 1))->limit(200);
 
 		return View::make('logs')
 			->with('logs', $logs);
