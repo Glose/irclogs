@@ -7,15 +7,20 @@
 	<link rel="stylesheet" href="app/css/styles.css">
 </head>
 <body>
-	<header placeholder="Laravel IRC logs" autofocus spellcheck="false" class='header' action="{{ URL::action('LogsController@search') }}" contenteditable>
-		<a class="logo" href="http://laravel.com"><img src="/img/laravel.png"></a>
-		<h1>
+
+	<header class="header">
+		<h1 class="header__search" action="{{ URL::action('LogsController@search') }}" contenteditable placeholder="Laravel IRC logs" autofocus spellcheck="false" >
 			Laravel IRC logs - Click to search
 		</h1>
+		<a class="logo" href="http://laravel.com">
+			{{ Html::image('app/img/laravel.png', 'Laravel') }}
+		</a>
 	</header>
+
 	<section class='content'>
 		@yield('content')
 	</section>
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script src="app/js/scripts.js"></script>
 </body>

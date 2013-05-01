@@ -1,10 +1,12 @@
-$('.header').focus();
+$('.header__search').focus();
 
-$('.header').keypress(function(event) {
-	if (event.which == 13) {
-		url = $(this).attr('action');
+$('.header__search').keypress(function(event) {
+  if (event.which == 13) {
+    event.preventDefault();
+
+  	url = $(this).attr('action');
 		$.get(url, function(results) {
-			console.log(results);
+			$('.logs').html(results);
 		});
 	}
 });

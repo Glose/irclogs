@@ -1,0 +1,49 @@
+
+// Variables ------------------------------------------------------- /
+
+$header-padding: 1.5rem;
+
+// Header ---------------------------------------------------------- /
+
+.header {
+
+  // Structure
+  @include box-sizing(border-box);
+  width: 100%;
+  position: fixed;
+
+  // Appearance
+  @include transition(.3s all);
+  background-color: $background-color;
+  color: white;
+
+  // Searchbox / Title --------------------------------------------- /
+
+  h1 {
+    margin: 0;
+    padding: $header-padding;
+    line-height: 1;
+    font-weight: 100;
+    letter-spacing: -.05em;
+    with: 100%;
+    height: 100%;
+
+    small {
+      color: darken($dark-orange, 10);
+    }
+  }
+}
+
+// Logo ------------------------------------------------------------ /
+
+.logo {
+  @include opacity(0.8);
+  margin-bottom: 0.3em;
+  position: fixed;
+  top: $header-padding;
+  right: $header-padding;
+
+  &:hover {
+    @include opacity(1);
+  }
+}

@@ -33,40 +33,11 @@ body {
 //////////////////////////////// LAYOUT //////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-.header {
-	@include transition(.3s all);
-	@include box-sizing(border-box);
-	padding: 1rem;
-	position: fixed;
-	background-color: $background-color;
-	width: 100%;
-	color: white;
-
-	h1 {
-		margin: 0;
-		padding: 0;
-		line-height: 1;
-		font-weight: 100;
-		letter-spacing: -.05em;
-
-		small {
-			color: darken($dark-orange, 10);
-		}
-	}
-}
-
-.logo {
-	opacity: 0.8;
-	float: right;
-	margin-bottom: 0.3em;
-}
-
-.logo:hover {
-	opacity:1;
-}
+@import "layout/header";
 
 .content {
 	padding: 2rem;
+	padding-top: 6rem;
 }
 
 .logs {
