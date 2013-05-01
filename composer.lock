@@ -582,12 +582,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ircmaxell/password_compat.git",
-                "reference": "v1.0.0"
+                "reference": "v1.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/v1.0.0",
-                "reference": "v1.0.0",
+                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/v1.0.3",
+                "reference": "v1.0.3",
                 "shasum": ""
             },
             "type": "library",
@@ -613,7 +613,7 @@
                 "hashing",
                 "password"
             ],
-            "time": "2013-01-14 16:49:31"
+            "time": "2013-04-30 19:58:08"
         },
         {
             "name": "julien-c/mongovel",
@@ -621,12 +621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/julien-c/mongovel.git",
-                "reference": "19250da569f4f71f2903797ffbb1a5fc88ee74d0"
+                "reference": "c17a43ea506e773909b21bad65b3a7e63da846ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/julien-c/mongovel/zipball/19250da569f4f71f2903797ffbb1a5fc88ee74d0",
-                "reference": "19250da569f4f71f2903797ffbb1a5fc88ee74d0",
+                "url": "https://api.github.com/repos/julien-c/mongovel/zipball/c17a43ea506e773909b21bad65b3a7e63da846ff",
+                "reference": "c17a43ea506e773909b21bad65b3a7e63da846ff",
                 "shasum": ""
             },
             "require": {
@@ -665,7 +665,7 @@
                 "mongo",
                 "mongodb"
             ],
-            "time": "2013-04-30 18:40:04"
+            "time": "2013-04-30 18:54:43"
         },
         {
             "name": "laravel/framework",
@@ -677,7 +677,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6976d7d9b8eb3717a34cc3bc4411feb792cd0d0c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9347bb17c8556b1f49b2940b13437267d4befa8b",
                 "reference": "aa9d374c8451576356b792c193eceefc8d0a96fa",
                 "shasum": ""
             },
@@ -1062,12 +1062,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "e77eb358a1aa7157afb922f33e2afc22f6a7bef2"
+                "reference": "a64528efec37173a6dabaedb0e678beffdb446f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/e77eb358a1aa7157afb922f33e2afc22f6a7bef2",
-                "reference": "e77eb358a1aa7157afb922f33e2afc22f6a7bef2",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/a64528efec37173a6dabaedb0e678beffdb446f0",
+                "reference": "a64528efec37173a6dabaedb0e678beffdb446f0",
                 "shasum": ""
             },
             "require": {
@@ -1076,7 +1076,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.3-dev"
+                    "dev-master": "5.0-dev"
                 }
             },
             "autoload": {
@@ -1086,7 +1086,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -1103,7 +1103,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-04-11 10:22:54"
+            "time": "2013-04-30 17:36:15"
         },
         {
             "name": "symfony/browser-kit",
@@ -1268,12 +1268,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "cc615424a19193d1c96886cc0d4ff6125eac7cde"
+                "reference": "8e200d7a33b9aa57b419daa358c12e001502fe31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/cc615424a19193d1c96886cc0d4ff6125eac7cde",
-                "reference": "cc615424a19193d1c96886cc0d4ff6125eac7cde",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/8e200d7a33b9aa57b419daa358c12e001502fe31",
+                "reference": "8e200d7a33b9aa57b419daa358c12e001502fe31",
                 "shasum": ""
             },
             "require": {
@@ -1315,7 +1315,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-07 20:25:23"
+            "time": "2013-04-30 17:23:11"
         },
         {
             "name": "symfony/dom-crawler",
@@ -1431,12 +1431,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "d6cda54824e01e27370d630e92456de797a18adb"
+                "reference": "1ad2bdf713147bb296c067f3381f7e9d80cd06a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/d6cda54824e01e27370d630e92456de797a18adb",
-                "reference": "d6cda54824e01e27370d630e92456de797a18adb",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/1ad2bdf713147bb296c067f3381f7e9d80cd06a2",
+                "reference": "1ad2bdf713147bb296c067f3381f7e9d80cd06a2",
                 "shasum": ""
             },
             "require": {
@@ -1469,7 +1469,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-25 12:07:50"
+            "time": "2013-05-01 07:15:46"
         },
         {
             "name": "symfony/finder",
@@ -1525,12 +1525,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "bb9fc05bac6d6248f53dbc42396fe4b8d92d7e5b"
+                "reference": "b02e3bb103f7ff6cb1c870ad99e71791a5de24b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/bb9fc05bac6d6248f53dbc42396fe4b8d92d7e5b",
-                "reference": "bb9fc05bac6d6248f53dbc42396fe4b8d92d7e5b",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/b02e3bb103f7ff6cb1c870ad99e71791a5de24b2",
+                "reference": "b02e3bb103f7ff6cb1c870ad99e71791a5de24b2",
                 "shasum": ""
             },
             "require": {
@@ -1566,7 +1566,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-25 12:33:17"
+            "time": "2013-04-30 17:05:37"
         },
         {
             "name": "symfony/http-kernel",
@@ -1575,12 +1575,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "9517776f77e5488655838516fe6187fe8e1734c1"
+                "reference": "5db0362d283a86c0b4e89a2e5e8653a985c12689"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/9517776f77e5488655838516fe6187fe8e1734c1",
-                "reference": "9517776f77e5488655838516fe6187fe8e1734c1",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/5db0362d283a86c0b4e89a2e5e8653a985c12689",
+                "reference": "5db0362d283a86c0b4e89a2e5e8653a985c12689",
                 "shasum": ""
             },
             "require": {
@@ -1636,7 +1636,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-30 07:25:51"
+            "time": "2013-05-01 07:15:46"
         },
         {
             "name": "symfony/process",
@@ -1750,12 +1750,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "f9d99f68a64466f5b5c081421dfe435539541123"
+                "reference": "712a23783aa7d4bea351f3aa95e15f68a00e177e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/f9d99f68a64466f5b5c081421dfe435539541123",
-                "reference": "f9d99f68a64466f5b5c081421dfe435539541123",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/712a23783aa7d4bea351f3aa95e15f68a00e177e",
+                "reference": "712a23783aa7d4bea351f3aa95e15f68a00e177e",
                 "shasum": ""
             },
             "require": {
@@ -1796,7 +1796,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-30 07:16:44"
+            "time": "2013-04-30 17:05:37"
         }
     ],
     "packages-dev": [
