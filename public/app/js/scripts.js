@@ -1,5 +1,5 @@
 
-var delayedSearch, headerSearch, logs;
+var delayedSearch, headerSearch, logs, lastSearch;
 
 headerSearch = $('.header-search');
 logs         = $('.logs');
@@ -23,14 +23,18 @@ function searchQuery(url) {
 
 // Simulate focus and placeholder behavior
 headerSearch.focus();
-placeholder = headerSearch.text();
 
 headerSearch.keyup(function(event) {
 	var query, url, results;
 
-	logs.stop(true).fadeTo('fast', .5);
+	// Get query to execute, cancel if twice the same query
 	query = $(this).val();
 	url   = $(this).attr('action')+'/'+query;
+	if (query == lastSearch) return false;
+
+	// Fade out logs during search and cache the last query
+	logs.stop(true).fadeTo('fast', .5);
+	lastSearch = query;
 
 	if (event.which == 13) {
 		event.preventDefault();
