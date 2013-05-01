@@ -53,6 +53,8 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0; }
+  .logs a {
+    color: #ccc; }
 
 .log-entry {
   margin-bottom: .5rem;
