@@ -1,10 +1,32 @@
 <?php
+use Carbon\Carbon;
 
 class LogsController extends BaseController
 {
-	public static $DATE_FORMAT = 'Y-m-d';
-	public static $TIME_FORMAT = 'Y-m-d/H:i';
-	public static $AJAX_LOAD   = 200;
+	/** 
+	 * The format of dates
+	 *
+	 * @var string
+	 */
+	protected $dateFormat = 'Y-m-d';
+	
+	/** 
+	 * The format of datetime
+	 *
+	 * @var string
+	 */
+	protected $datetimeFormat = 'Y-m-d/H:i';
+	
+	/** 
+	 * The number of logs to load via AJAX
+	 *
+	 * @var integer
+	 */
+	protected $ajaxLoad = 200;
+
+	////////////////////////////////////////////////////////////////////
+	///////////////////////////// LOG FETCHING /////////////////////////
+	////////////////////////////////////////////////////////////////////
 	
 	/**
 	 * Display the latest logs
@@ -13,16 +35,17 @@ class LogsController extends BaseController
 	{
 		$datetime = null;
 		if ($date) {
-			$datetime = DateTime::createFromFormat(static::$TIME_FORMAT, $date);
+			$datetime = DateTime::createFromFormat($this->datetimeFormat, $date);
 		}
 		if ($date && !$datetime) {
-			$datetime = DateTime::createFromFormat(static::$DATE_FORMAT, $date);
+			$datetime = DateTime::createFromFormat($this->dateFormat, $date);
 		}
 		if (!$datetime) {
-			$datetime = new DateTime('@'.(time() - 5*60));
+			$datetime = Carbon::now()->subMinutes(5);
 		}
 		
 		list($firstLog, $logs, $moreup, $moredown) = IrcLog\Repository::getAroundDate($datetime);
+
 		return View::make('logs')
 			->with('logs', $logs)
 			->with('firstLog', $firstLog)
@@ -54,19 +77,21 @@ class LogsController extends BaseController
 	{
 		$log = IrcLog::findOneOrFail($id);
 		
-		list($filter, $sort, $more) = $direction == 'up' ?
+		// Build the query to fetch logs with
+		list($filter, $sort, $more) = ($direction == 'up') ?
 			array('$lt', -1, 'reset') :
-			array('$gt', 1, 'end');
+			array('$gt',  1, 'end');
 		
+		// Fetch the logs
 		$logs = IrcLog::find(array(
 				'time' => array($filter => $log->time),
 			))
 			->sort(array('time' => $sort))
-			->limit(static::$AJAX_LOAD)
+			->limit($this->ajaxLoad)
 			->all();
 		
 		$loadMore = null;
-		if (count($logs) == static::$AJAX_LOAD) {
+		if (count($logs) == $this->ajaxLoad) {
 			$loadMore = $more($logs)->_id;
 		}
 		
