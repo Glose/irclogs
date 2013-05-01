@@ -2,6 +2,7 @@ irclogs
 =======
 
 ```bash
+$ composer install
 $ bower install
 $ forever start main.js
 ```
