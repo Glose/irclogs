@@ -29,7 +29,7 @@ headerSearch.keyup(function (event) {
 	// Get query to execute, cancel if twice the same query
 	query = $(this).val();
 	url = $(this).attr('action') + '/' + query;
-	if (query === lastSearch) {
+	if (query === lastSearch || query === '') {
 		return false;
 	}
 
