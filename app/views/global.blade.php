@@ -9,7 +9,7 @@
 <body>
 
 	<header class="header">
-		<h1 class="header__search" action="{{ URL::action('LogsController@search') }}" contenteditable placeholder="Laravel IRC logs" autofocus spellcheck="false" >
+		<h1 class="header-search" action="{{ URL::action('LogsController@search') }}" contenteditable placeholder="Laravel IRC logs" autofocus spellcheck="false" >
 			Laravel IRC logs - Click to search
 		</h1>
 		<a class="logo" href="http://laravel.com">
