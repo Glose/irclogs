@@ -10,7 +10,6 @@ var client = new irc.Client('irc.freenode.net', 'irclogs', {
 var logs = mongojs('irclogs').collection('logs');
 
 var logSave = function(hash) {
-	console.log(hash);
 	hash.time = new Date;
 	logs.save(hash, {w: 0});
 }
