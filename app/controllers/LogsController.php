@@ -2,19 +2,29 @@
 
 class LogsController extends BaseController
 {
-	public static $FORMAT = 'Y-m-d';
+	public static $DATE_FORMAT = 'Y-m-d';
+	public static $TIME_FORMAT = 'Y-m-d H:i';
 	
 	/**
 	 * Display the latest logs
 	 */
-	public function index($date = null)
+	public function index($date = null, $time = null)
 	{
+		$datetime = null;
+		if ($time && $date) {
+			$datetime = DateTime::createFromFormat(static::$TIME_FORMAT, $date.' '.$time);
+		}
+		if ($date && !$datetime) {
+			$datetime = DateTime::createFromFormat(static::$DATE_FORMAT, $date);
+		}
+		
 		$filter = array();
-		if ($date = DateTime::createFromFormat(static::$FORMAT, $date)) {
+		if ($datetime) {
 			$filter = array(
-				'time' => array('$gt' => new MongoDate($date->getTimestamp())),
+				'time' => array('$gt' => new MongoDate($datetime->getTimestamp())),
 			);
 		}
+		
 		$logs = IrcLog::find($filter)->limit(200);
 
 		return View::make('logs')
