@@ -2,13 +2,20 @@
 
 class LogsController extends BaseController
 {
-
+	public static $FORMAT = 'Y-m-d';
+	
 	/**
 	 * Display the latest logs
 	 */
-	public function index()
+	public function index($date = null)
 	{
-		$logs = IrcLog::find();
+		$filter = array();
+		if ($date = DateTime::createFromFormat(static::$FORMAT, $date)) {
+			$filter = array(
+				'time' => array('$gt' => $date),
+			);
+		}
+		$logs = IrcLog::find($filter)->limit(200);
 
 		return View::make('logs')
 			->with('logs', $logs);
@@ -31,5 +38,5 @@ class LogsController extends BaseController
 			->with('logs', $logs)
 			->with('search', $search);
 	}
-
+	
 }

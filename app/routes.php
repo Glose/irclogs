@@ -12,5 +12,6 @@
 */
 
 Route::get('/', 'LogsController@index');
+Route::get('/{date}', 'LogsController@index');
 
 Route::get('search', 'LogsController@search');
