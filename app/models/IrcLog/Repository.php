@@ -15,13 +15,9 @@ class Repository
 	 *
 	 * @return array
 	 */
-	public static function getAroundDate(DateTime $date = null)
+	public static function getAroundDate(DateTime $date)
 	{
-		if (!$date) {
-			return static::getAroundDate(new DateTime('@'.(time() - 5*60)));
-		}
-		
-		$UP_LIMIT = 100;
+		$UP_LIMIT   = 100;
 		$DOWN_LIMIT = 200;
 		
 		$logs = IrcLog::find(array(
@@ -30,7 +26,7 @@ class Repository
 			->sort(array('time' => 1))
 			->limit($DOWN_LIMIT)
 			->all();
-				
+		
 		$previousLogs = array_reverse(
 			IrcLog::find(array(
 				'time' => array('$lte' => new MongoDate($date->getTimestamp())),

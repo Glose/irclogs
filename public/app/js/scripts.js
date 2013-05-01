@@ -57,6 +57,6 @@ $('.timeline a').click(function(event) {
 // Move to the requested datetime
 if (logs.data('first-log')) {
 	var offset = $(logs.data('first-log')).offset();
-	$('body').animate({scrollTop: offset.top}, 0);
+	$('html, body').animate({scrollTop: offset.top - $('header').height()}, 0);
 }
 

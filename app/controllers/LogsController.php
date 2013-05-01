@@ -17,6 +17,9 @@ class LogsController extends BaseController
 		if ($date && !$datetime) {
 			$datetime = DateTime::createFromFormat(static::$DATE_FORMAT, $date);
 		}
+		if (!$datetime) {
+			$datetime = new DateTime('@'.(time() - 5*60));
+		}
 		
 		list($firstLog, $logs) = IrcLog\Repository::getAroundDate($datetime);
 		return View::make('logs')
