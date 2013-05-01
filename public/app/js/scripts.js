@@ -26,8 +26,8 @@ headerSearch.keypress(function(event) {
 	var query, url, results;
 
 	logs.fadeTo('fast', .5);
-	query = $(this).text();
-	url   = $(this).attr('action')+"?q=" +query;
+	query = $(this).val();
+	url   = $(this).attr('action')+'/'+query;
 
 	if (event.which == 13) {
 		event.preventDefault();

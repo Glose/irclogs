@@ -8,7 +8,7 @@
 <body>
 
 	<header class="header">
-		<input class="header-search" action="{{ URL::action('LogsController@search') }}" contenteditable placeholder="Laravel IRC logs" autofocus spellcheck="false">
+		<input class="header-search" action="{{ URL::to('search/') }}" contenteditable placeholder="Laravel IRC logs" autofocus spellcheck="false">
 		<a class="logo" href="http://laravel.com">
 			{{ Html::image('app/img/laravel.png', 'Laravel') }}
 		</a>

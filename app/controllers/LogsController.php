@@ -34,9 +34,8 @@ class LogsController extends BaseController
 	/**
 	 * Search in the database and display results
 	 */
-	public function search()
+	public function search($q = null)
 	{
-		$q      = Input::get('q');
 		$logs   = IrcLog::textSearch($q);
 		$search = true;
 
