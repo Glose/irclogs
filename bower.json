@@ -2,6 +2,7 @@
   "name": "irclogs",
   "version": "0.0.0",
   "dependencies": {
-    "linkify": "latest"
+    "linkify": "latest",
+    "jquery": "latest"
   }
 }

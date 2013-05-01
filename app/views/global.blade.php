@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IRCLogs</title>
+	<link rel="stylesheet" href="{{ URL::asset('components/normalize-css/normalize.css') }}">
 	<link rel="stylesheet" href="{{ URL::asset('app/css/styles.css') }}">
 </head>
 <body>
@@ -18,7 +19,7 @@
 		@yield('content')
 	</section>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="{{ URL::asset('components/jquery/jquery.min.js') }}"></script>
 	<script src="{{ URL::asset('components/linkify/jquery.linkify.js') }}"></script>
 	<script src="{{ URL::asset('app/js/scripts.js') }}"></script>
 </body>
