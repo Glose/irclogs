@@ -64,4 +64,5 @@ App::error(function(Exception $exception, $code)
 |
 */
 
+require __DIR__.'/../assets.php';
 require __DIR__.'/../filters.php';

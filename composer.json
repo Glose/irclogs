@@ -1,8 +1,9 @@
 {
 	"require": {
-		"laravel/framework": "dev-master#aa9d374c8451576356b792c193eceefc8d0a96fa",
-		"julien-c/mongovel": "dev-master",
-		"fzaninotto/faker": "dev-master"
+		"laravel/framework" : "dev-master#aa9d374c8451576356b792c193eceefc8d0a96fa",
+		"fzaninotto/faker"  : "dev-master",
+		"jasonlewis/basset" : "dev-master",
+		"julien-c/mongovel" : "dev-master"
 	},
 	"autoload": {
 		"classmap": [

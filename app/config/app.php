@@ -114,6 +114,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		'Mongovel\MongovelServiceProvider',
+		'Basset\BassetServiceProvider',
 
 	),
 
@@ -184,6 +185,9 @@ return array(
 		'Mongovel'      => 'Mongovel\Mongovel',
 		'MongovelModel' => 'Mongovel\Model',
 		'MongovelDB'    => 'Mongovel\Facades\MongovelDB',
+
+		// Others
+		'Basset' => 'Basset\Facade',
 		
 	),
 

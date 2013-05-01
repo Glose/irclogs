@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IRCLogs</title>
-	<link rel="stylesheet" href="{{ URL::asset('components/normalize-css/normalize.css') }}">
-	<link rel="stylesheet" href="{{ URL::asset('app/css/styles.css') }}">
+	{{ Basset::show('application.css') }}
 </head>
 <body>
 
@@ -24,9 +23,6 @@
 		</aside>
 	</section>
 
-
-	<script src="{{ URL::asset('components/jquery/jquery.min.js') }}"></script>
-	<script src="{{ URL::asset('components/linkify/jquery.linkify.js') }}"></script>
-	<script src="{{ URL::asset('app/js/scripts.js') }}"></script>
+	{{ Basset::show('application.js') }}
 </body>
 </html>
