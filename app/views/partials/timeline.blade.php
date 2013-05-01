@@ -8,7 +8,7 @@
 						<a href="#">{{ Carbon::createFromDate(2012, $month)->format('F') }}</a>
 						<ul>
 							@foreach($days as $day => $date)
-								@if (Str::contains(URL::full(), $date->format('Y-m-d')))
+								@if (Str::contains(URL::full(), $date->format('Y-m-d')) or $date->format('Y-m-d') == date('Y-m-d'))
 									<li class="timeline-day current">
 								@else
 									<li class="timeline-day">
