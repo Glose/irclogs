@@ -14,4 +14,3 @@
 Route::get('/', 'LogsController@index');
 
 Route::get('search', 'LogsController@search');
-Route::get('api/search', 'LogsController@apiSearch');

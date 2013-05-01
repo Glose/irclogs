@@ -19,29 +19,17 @@ class LogsController extends BaseController
 	 */
 	public function search()
 	{
-		$q    = Input::get('q');
-		$logs = IrcLog::textSearch($q);
+		$q      = Input::get('q');
+		$logs   = IrcLog::textSearch($q);
+		$search = true;
 
 		if (Request::ajax()) {
-			return View::make('partials.logs', compact('logs'));
+			return View::make('partials.logs', compact('logs', 'search'));
 		}
 
 		return View::make('logs')
 			->with('logs', $logs)
-			->with('search', true);
+			->with('search', $search);
 	}
-	
-	
-	//////////////////////////////////////////////////////////////////////
-	//////////////////////////////// API /////////////////////////////////
-	//////////////////////////////////////////////////////////////////////
 
-	public function apiSearch()
-	{
-		$q = Input::get('q');
-		
-		$logs = IrcLog::textSearch($q);
-		
-		return Response::json($logs);
-	}
 }
