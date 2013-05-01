@@ -21,6 +21,11 @@ $font-mono: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, mono
 ///////////////////////////// SCAFFOLDING ////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+html, body {
+	width: 100%;
+	min-height: 100%;
+}
+
 body {
 	background-color: $background-color;
 	color: #ccc;
