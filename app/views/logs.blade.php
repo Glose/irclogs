@@ -5,6 +5,9 @@
 		@foreach ($logs as $log)
 			<li class="log-entry log-entry-{{ $log->type }}">
 				<span class="log-entry-time">
+					@if ($search)
+						{{ $log->getDay() }} –
+					@endif
 					{{ $log->getHour() }}
 				</span>
 				{{ $log->getText() }}

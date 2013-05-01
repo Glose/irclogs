@@ -27,4 +27,14 @@ class IrcLog extends Model
 	{
 		return date('H:i', $this->time->sec);
 	}
+	
+	/**
+	 * Returns the day of the entry
+	 * 
+	 * @return string
+	 */
+	public function getDay()
+	{
+		return date('D, d M', $this->time->sec);
+	}
 }

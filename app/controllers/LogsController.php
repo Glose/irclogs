@@ -18,7 +18,8 @@ class LogsController extends BaseController
 		$logs = IrcLog::textSearch($q);
 		
 		return View::make('logs')
-			->with('logs', $logs);
+			->with('logs', $logs)
+			->with('search', true);
 	}
 	
 	
