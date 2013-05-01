@@ -17,6 +17,7 @@ class LogsController extends BaseController
 		
 		$logs = IrcLog::textSearch($q);
 		
-		return Response::json($logs);
+		return View::make('logs')
+			->with('logs', $logs);
 	}
 }
