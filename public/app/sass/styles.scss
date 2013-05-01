@@ -1,47 +1,38 @@
 
+// Frameworks
+//
+// Import framework modules
+// ----------------------------------------------------------------- /
+
 @import "compass";
 
-//////////////////////////////////////////////////////////////////////
-//////////////////////////////// HELPERS /////////////////////////////
-//////////////////////////////////////////////////////////////////////
+// Layout
+//
+// Helper methods, mixins and variables
+// ----------------------------------------------------------------- /
 
-@function grey($lightness) {
-	@return lighten(black, $lightness);
-}
+@import "helpers/variables";
+@import "helpers/functions";
 
-$orange:      #DB613B;
-$dark-orange: #E3B446;
-$dark-blue:   darken(#2C3E50, 14);
+// Scaffolding
+//
+// General element styles
+// ----------------------------------------------------------------- /
 
-$background-color: #222;
+@import "scaffolding/scaffolding";
 
-$font-mono: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-
-//////////////////////////////////////////////////////////////////////
-///////////////////////////// SCAFFOLDING ////////////////////////////
-//////////////////////////////////////////////////////////////////////
-
-html, body {
-	background-color: $background-color;
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	color: #ccc;
-	font-family: $font-mono;
-	font-size: 12px;
-	line-height: 16px;
-}
-
-//////////////////////////////////////////////////////////////////////
-//////////////////////////////// LAYOUT //////////////////////////////
-//////////////////////////////////////////////////////////////////////
-
-$header-height: 6.5rem;
+// Layout
+//
+// Core components of the design
+// ----------------------------------------------------------------- /
 
 @import "layout/header";
 @import "layout/content";
 @import "layout/timeline";
+
+// Modules
+//
+// Patterns and modules
+// ----------------------------------------------------------------- /
 
 @import "modules/logs";

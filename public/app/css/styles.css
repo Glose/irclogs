@@ -1,3 +1,7 @@
+html {
+  font-size: 75%;
+  line-height: 1.25em; }
+
 html, body {
   background-color: #222222;
   width: 100%;
@@ -5,9 +9,7 @@ html, body {
 
 body {
   color: #ccc;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 12px;
-  line-height: 16px; }
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; }
 
 .header {
   -webkit-box-sizing: border-box;

@@ -1,0 +1,17 @@
+// General scaffolding
+//
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+@include establish-baseline;
+
+html, body {
+	background-color: $background-color;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: #ccc;
+	font-family: $font-mono;
+}

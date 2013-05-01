@@ -1,0 +1,26 @@
+// Variables
+//
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+// Colors ---------------------------------------------------------- /
+
+$orange     : #DB613B;
+$dark-orange: #E3B446;
+$dark-blue  : darken(#2C3E50, 14);
+
+$background-color: #222;
+
+// Font stacks ----------------------------------------------------- /
+
+$font-mono: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+
+// Configuration --------------------------------------------------- /
+
+$base-font-size   : 12px;
+$line-height      : 1.25;
+$base-line-height : $base-font-size * $line-height;
+
+// Layout ---------------------------------------------------------- /
+
+$header-height: 6.5rem;
