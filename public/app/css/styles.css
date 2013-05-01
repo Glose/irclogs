@@ -1,9 +1,9 @@
 html, body {
+  background-color: #222222;
   width: 100%;
-  min-height: 100%; }
+  height: 100%; }
 
 body {
-  background-color: #222222;
   color: #ccc;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 12px;

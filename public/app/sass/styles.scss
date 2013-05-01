@@ -22,12 +22,12 @@ $font-mono: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, mono
 //////////////////////////////////////////////////////////////////////
 
 html, body {
+	background-color: $background-color;
 	width: 100%;
-	min-height: 100%;
+	height: 100%;
 }
 
 body {
-	background-color: $background-color;
 	color: #ccc;
 	font-family: $font-mono;
 	font-size: 12px;
