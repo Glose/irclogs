@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IRCLogs</title>
-	<link rel="stylesheet" href="app/css/styles.css">
+	<link rel="stylesheet" href="{{ URL::asset('app/css/styles.css') }}">
 </head>
 <body>
 
@@ -19,6 +19,6 @@
 	</section>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	<script src="app/js/scripts.js"></script>
+	<script src="{{ URL::asset('app/js/scripts.js') }}"></script>
 </body>
 </html>
