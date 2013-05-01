@@ -4,6 +4,7 @@ class LogsController extends BaseController
 {
 	public static $DATE_FORMAT = 'Y-m-d';
 	public static $TIME_FORMAT = 'Y-m-d/H:i';
+	public static $AJAX_LOAD   = 200;
 	
 	/**
 	 * Display the latest logs
@@ -44,4 +45,26 @@ class LogsController extends BaseController
 			->with('search', $search);
 	}
 	
+	/**
+	 * Ajax infinite loading
+	 */
+	public function infinite($id, $direction)
+	{
+		$log = IrcLog::findOneOrFail($id);
+		list($filter, $sort, $more) = $direction == 'up' ? array('$lt', -1, 'reset') : array('$gt', 1, 'end');
+		$logs = IrcLog::find(array(
+				'time' => array($filter => $log->time),
+			))
+			->sort(array('time' => $sort))
+			->limit(static::$AJAX_LOAD)
+			->all();
+		$loadMore = null;
+		if (count($logs) == static::$AJAX_LOAD) {
+			$loadMore = $more($logs);
+		}
+		
+		return View::make('logs')
+			->with('logs', $logs)
+			->with($direction, $loadMore);
+	}
 }

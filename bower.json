@@ -4,6 +4,7 @@
   "dependencies": {
     "linkify": "latest",
     "jquery": "latest",
+    "jquery-waypoints": "latest",
     "normalize-css": "latest"
   }
 }
