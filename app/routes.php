@@ -24,23 +24,5 @@ Route::get('search/{query?}', 'LogsController@search');
 |*/
 
 View::composer('partials.timeline', function($view) {
-
-	$timeline = array();
-	
-	// Fetch start and end time
-	$firstLog  = IrcLog::find()->sort(array('time' => 1))->limit(1)[0];
-	$lastLog   = IrcLog::find()->sort(array('time' => -1))->limit(1)[0];
-	$firstDate = $firstLog->getDateTime()->format('Y-m-d');
-	$lastDate  = $lastLog->getDateTime()->format('Y-m-d');
-
-	// Loop and add to timeline
-	while (strtotime($firstDate) <= strtotime($lastDate)) {
-		list($year, $month, $day) = explode('-', $firstDate);
-		$timeline[$year][$month][$day] = URL::to($year.'-'.$month.'-'.$day);
-
-		$firstDate = date ("Y-m-d", strtotime("+1 day", strtotime($firstDate)));
-	}
-
-	$view->timeline = $timeline;
-
+	$view->timeline = IrcLog\Repository::getTimeline();
 });
