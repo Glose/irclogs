@@ -61,6 +61,10 @@ class LogsController extends BaseController
 		$search = true;
 
 		if (Request::ajax()) {
+			if (!$logs->count()) {
+				return '<p>No results were found</p>';
+			}
+
 			return View::make('partials.logs', compact('logs', 'search'));
 		}
 
