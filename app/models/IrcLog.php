@@ -14,7 +14,7 @@ class IrcLog extends Model
 	{
 		return Lang::get('messages.'.$this->type, array(
 			'username' => $this->nick,
-			'message'  => $this->text,
+			'message'  => Html::entities($this->text),
 		));
 	}
 
