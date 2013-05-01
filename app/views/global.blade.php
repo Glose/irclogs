@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>IRCLogs</title>
+	<title>Laravel IRC logs</title>
 	{{ Basset::show('application.css') }}
 </head>
 <body>
