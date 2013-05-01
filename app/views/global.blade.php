@@ -19,7 +19,7 @@
 	</section>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	<script src="components/linkify/jquery.linkify.js"></script>
+	<script src="{{ URL::asset('components/linkify/jquery.linkify.js') }}"></script>
 	<script src="{{ URL::asset('app/js/scripts.js') }}"></script>
 </body>
 </html>
