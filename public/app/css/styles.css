@@ -50,21 +50,27 @@ body {
     opacity: 1; }
 
 .content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 2rem;
-  padding-top: 6.5rem; }
+  padding-top: 6.5rem;
+  width: 70%;
+  float: left; }
 
 .timeline {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 100%;
-  width: 20rem;
-  position: fixed;
-  top: 6.5rem;
-  right: 0;
-  z-index: 5;
+  float: right;
+  overflow-y: scroll;
+  width: 20%;
   padding: 1rem;
+  margin-top: 6.5rem;
   background-color: #272727; }
+  .timeline a {
+    color: white;
+    text-decoration: none; }
 
 .logs {
   max-width: 75rem;

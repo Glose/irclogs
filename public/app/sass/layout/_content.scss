@@ -1,0 +1,8 @@
+
+.content {
+	@include box-sizing(border-box);
+	padding: 2rem;
+	padding-top: $header-height;
+	width: 70%;
+	float: left;
+}

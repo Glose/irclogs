@@ -15,11 +15,15 @@
 		</a>
 	</header>
 
-	<section class='content'>
-		@yield('content')
+	<section class='container'>
+		<main class='content'>
+			@yield('content')
+		</main>
+		<aside class='timeline'>
+			@include('partials.timeline')
+		</aside>
 	</section>
 
-	@include('partials.timeline')
 
 	<script src="{{ URL::asset('components/jquery/jquery.min.js') }}"></script>
 	<script src="{{ URL::asset('components/linkify/jquery.linkify.js') }}"></script>

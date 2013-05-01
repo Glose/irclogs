@@ -38,29 +38,10 @@ body {
 //////////////////////////////// LAYOUT //////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-@import "layout/header";
-
 $header-height: 6.5rem;
 
-.content {
-	padding: 2rem;
-	padding-top: $header-height;
-}
-
-.timeline {
-
-	// Structure
-	@include box-sizing(border-box);
-	height: 100%;
-	width: 20rem;
-	position: fixed;
-	top: $header-height;
-	right: 0;
-	z-index: 5;
-	padding: 1rem;
-
-	// Appearance
-	background-color: lighten($background-color, 2);
-}
+@import "layout/header";
+@import "layout/content";
+@import "layout/timeline";
 
 @import "modules/logs";
