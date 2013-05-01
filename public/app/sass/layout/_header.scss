@@ -11,6 +11,7 @@ $header-padding: 1.5rem;
 	@include box-sizing(border-box);
 	width: 100%;
 	position: fixed;
+	z-index: 10;
 
 	// Appearance
 	@include transition(.3s all);

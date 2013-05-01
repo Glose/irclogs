@@ -40,38 +40,27 @@ body {
 
 @import "layout/header";
 
+$header-height: 6.5rem;
+
 .content {
 	padding: 2rem;
-	padding-top: 7rem;
+	padding-top: $header-height;
 }
 
-.logs {
-	max-width: 75rem;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	
-	a {
-		color: #ccc;
-	}
+.timeline {
+
+	// Structure
+	@include box-sizing(border-box);
+	height: 100%;
+	width: 20rem;
+	position: fixed;
+	top: $header-height;
+	right: 0;
+	z-index: 5;
+	padding: 1rem;
+
+	// Appearance
+	background-color: lighten($background-color, 2);
 }
 
-.log-entry {
-	margin-bottom: .5rem;
-	line-height: 1rem;
-}
-
-.log-entry-username {
-	color: $orange;
-}
-
-.log-entry-time {
-	color: rgb(119, 119, 119);
-}
-
-.log-entry-quit,
-.log-entry-join,
-.log-secondary {
-	font-style: italic;
-	color: #34495E;
-}
+@import "modules/logs";

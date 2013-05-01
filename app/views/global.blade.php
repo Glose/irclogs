@@ -19,6 +19,8 @@
 		@yield('content')
 	</section>
 
+	@include('partials.timeline')
+
 	<script src="{{ URL::asset('components/jquery/jquery.min.js') }}"></script>
 	<script src="{{ URL::asset('components/linkify/jquery.linkify.js') }}"></script>
 	<script src="{{ URL::asset('app/js/scripts.js') }}"></script>

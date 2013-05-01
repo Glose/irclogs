@@ -19,13 +19,21 @@ class IrcLog extends Model
 	}
 
 	/** 
+	 * Returns a DateTime object from the hour
+	 */
+	public function getDateTime()
+	{
+		return new DateTime('@'.$this->time->sec);
+	}
+
+	/** 
 	 * Returns the hour of the entry
 	 *
 	 * @return  string
 	 */
 	public function getHour()
 	{
-		return date('H:i', $this->time->sec);
+		return $this->getDateTime()->format('H:i');
 	}
 	
 	/**
@@ -35,6 +43,6 @@ class IrcLog extends Model
 	 */
 	public function getDay()
 	{
-		return date('D, d M', $this->time->sec);
+		return $this->getDateTime()->format('D, d M');
 	}
 }

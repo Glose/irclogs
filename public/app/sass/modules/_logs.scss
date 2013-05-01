@@ -1,0 +1,30 @@
+.logs {
+	max-width: 75rem;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	
+	a {
+		color: #ccc;
+	}
+}
+
+.log-entry {
+	margin-bottom: .5rem;
+	line-height: 1rem;
+}
+
+.log-entry-username {
+	color: $orange;
+}
+
+.log-entry-time {
+	color: rgb(119, 119, 119);
+}
+
+.log-entry-quit,
+.log-entry-join,
+.log-secondary {
+	font-style: italic;
+	color: #34495E;
+}
