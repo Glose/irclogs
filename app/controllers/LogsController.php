@@ -3,34 +3,25 @@
 class LogsController extends BaseController
 {
 	public static $DATE_FORMAT = 'Y-m-d';
-	public static $TIME_FORMAT = 'Y-m-d H:i';
+	public static $TIME_FORMAT = 'Y-m-d/H:i';
 	
 	/**
 	 * Display the latest logs
 	 */
-	public function index($date = null, $time = null)
+	public function index($date = null)
 	{
-		Log::error($date);
-		Log::error($time);
 		$datetime = null;
-		if ($time && $date) {
-			$datetime = DateTime::createFromFormat(static::$TIME_FORMAT, $date.' '.$time);
+		if ($date) {
+			$datetime = DateTime::createFromFormat(static::$TIME_FORMAT, $date);
 		}
 		if ($date && !$datetime) {
 			$datetime = DateTime::createFromFormat(static::$DATE_FORMAT, $date);
 		}
 		
-		$filter = array();
-		if ($datetime) {
-			$filter = array(
-				'time' => array('$gt' => new MongoDate($datetime->getTimestamp())),
-			);
-		}
-		
-		$logs = IrcLog::find($filter)->sort(array('time' => 1))->limit(200);
-
+		list($firstLog, $logs) = IrcLog\Repository::getAroundDate($datetime);
 		return View::make('logs')
-			->with('logs', $logs);
+			->with('logs', $logs)
+			->with('firstLog', $firstLog);
 	}
 
 	/**

@@ -53,3 +53,10 @@ $('.timeline a').click(function(event) {
 		$(this).parent().find('> ul').slideToggle(delay);
 	}
 });
+
+// Move to the requested datetime
+if (logs.data('first-log')) {
+	var offset = $(logs.data('first-log')).offset();
+	$('body').animate({scrollTop: offset.top}, 0);
+}
+

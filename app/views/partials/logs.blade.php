@@ -4,14 +4,19 @@
 			<li class="log-secondary"> 
 				–– {{ $log->getDay() }}
 			</li>
+			<li class="log-entry log-entry-{{ $log->type }}">
+				<span class="log-entry-time">
+					{{ $log->getHour() }}
+				</span>
+				{{ $log->getText() }}
+			</li>
 		</a>
-	@endif
-	<a href="/{{ $log->getUrl() }}" class="logs-nav">
-		<li class="log-entry log-entry-{{ $log->type }}">
+	@else
+		<li class="log-entry log-entry-{{ $log->type }}" data-url="{{ $log->getUrl() }}" id="log-{{ $log->_id }}">
 			<span class="log-entry-time">
 				{{ $log->getHour() }}
 			</span>
 			{{ $log->getText() }}
 		</li>
-	</a>
+	@endif
 @endforeach

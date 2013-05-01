@@ -53,6 +53,7 @@ class IrcLog extends Model
 	 */
 	public function getUrl()
 	{
-		return date('Y-m-d/H:i', $this->time->sec);
+		return $this->getDateTime()->format('Y-m-d/H:i');
 	}
+	
 }
