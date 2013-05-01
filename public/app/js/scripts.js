@@ -2,7 +2,7 @@
 var delayedSearch, headerSearch, logs;
 
 headerSearch = $('.header-search');
-logs = $('.logs');
+logs         = $('.logs');
 
 logs.linkify();
 
@@ -25,10 +25,10 @@ function searchQuery(url) {
 headerSearch.focus();
 placeholder = headerSearch.text();
 
-headerSearch.keypress(function(event) {
+headerSearch.keyup(function(event) {
 	var query, url, results;
 
-	logs.fadeTo('fast', .5);
+	logs.stop(true).fadeTo('fast', .5);
 	query = $(this).val();
 	url   = $(this).attr('action')+'/'+query;
 
