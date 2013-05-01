@@ -4,6 +4,8 @@ var delayedSearch, headerSearch, logs;
 headerSearch = $('.header-search');
 logs = $('.logs');
 
+logs.linkify();
+
 // Search ---------------------------------------------------------- /
 
 function searchQuery(url) {
@@ -11,6 +13,7 @@ function searchQuery(url) {
 
 	delayedSearch = setTimeout(function() {
 		$.get(url, function(results) {
+			results = $(results).linkify();
 			logs.fadeTo('fast', 1).html(results);
 		});
 	}, 50);
