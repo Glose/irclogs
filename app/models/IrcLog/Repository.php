@@ -4,7 +4,7 @@ namespace IrcLog;
 use DateTime;
 use IrcLog;
 use MongoDate;
-
+use URL;
 
 class Repository
 {
