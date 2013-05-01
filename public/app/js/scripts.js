@@ -1,29 +1,37 @@
-var delay, delayedSearch;
+
+var delayedSearch, headerSearch, logs;
+
+headerSearch = $('.header-search');
+logs = $('.logs');
 
 // Search ---------------------------------------------------------- /
 
 function searchQuery(url) {
-	clearTimeout(delayedSearch);
+	window.clearTimeout(delayedSearch);
 
 	delayedSearch = setTimeout(function() {
 		$.get(url, function(results) {
-			$('.logs').html(results);
+			logs.fadeTo('fast', 1).html(results);
 		});
 	}, 50);
 }
 
 // Header interaction ---------------------------------------------- /
 
-$('.header-search').focus();
+// Simulate focus and placeholder behavior
+headerSearch.focus();
+placeholder = headerSearch.text();
 
-$('.header-search').keypress(function(event) {
-	var query, url, results, delay, _this = this;
+headerSearch.keypress(function(event) {
+	var query, url, results;
+
+	logs.fadeTo('fast', .5);
+	query = $(this).text();
+	url   = $(this).attr('action')+"?q=" +query;
 
 	if (event.which == 13) {
 		event.preventDefault();
 	}
 
-	query = $(this).text();
-	url   = $(this).attr('action')+"?q=" +query;
 	searchQuery(url);
 });
