@@ -94,6 +94,7 @@ function prepareWaypoint(container, wpDirection) {
 				
 				if ($newMore.length) {
 					$more.replaceWith($newMore);
+					$container.waypoint('enable');
 				} else {
 					$container.waypoint('destroy');
 				}

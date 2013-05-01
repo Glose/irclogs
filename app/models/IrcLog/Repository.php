@@ -37,7 +37,12 @@ class Repository
 			->all()
 		);
 
-		return array(end($previousLogs), array_merge($previousLogs, $logs));
+		return array(
+			end($previousLogs),
+			array_merge($previousLogs, $logs),
+			count($previousLogs) == $upLimit ? reset($previousLogs)->_id : null,
+			count($logs) == $downLimit ? end($logs)->_id : null,
+		);
 	}
 
 	/** 

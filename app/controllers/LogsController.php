@@ -22,10 +22,12 @@ class LogsController extends BaseController
 			$datetime = new DateTime('@'.(time() - 5*60));
 		}
 		
-		list($firstLog, $logs) = IrcLog\Repository::getAroundDate($datetime);
+		list($firstLog, $logs, $moreup, $moredown) = IrcLog\Repository::getAroundDate($datetime);
 		return View::make('logs')
 			->with('logs', $logs)
-			->with('firstLog', $firstLog);
+			->with('firstLog', $firstLog)
+			->with('moreup', $moreup)
+			->with('moredown', $moredown);
 	}
 
 	/**
@@ -48,23 +50,28 @@ class LogsController extends BaseController
 	/**
 	 * Ajax infinite loading
 	 */
-	public function infinite($id, $direction)
+	public function infinite($direction, $id)
 	{
 		$log = IrcLog::findOneOrFail($id);
-		list($filter, $sort, $more) = $direction == 'up' ? array('$lt', -1, 'reset') : array('$gt', 1, 'end');
+		
+		list($filter, $sort, $more) = $direction == 'up' ?
+			array('$lt', -1, 'reset') :
+			array('$gt', 1, 'end');
+		
 		$logs = IrcLog::find(array(
 				'time' => array($filter => $log->time),
 			))
 			->sort(array('time' => $sort))
 			->limit(static::$AJAX_LOAD)
 			->all();
+		
 		$loadMore = null;
 		if (count($logs) == static::$AJAX_LOAD) {
-			$loadMore = $more($logs);
+			$loadMore = $more($logs)->_id;
 		}
 		
-		return View::make('logs')
+		return View::make('partials.logs')
 			->with('logs', $logs)
-			->with($direction, $loadMore);
+			->with('more' . $direction, $loadMore);
 	}
 }
