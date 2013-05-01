@@ -36,7 +36,7 @@ View::composer('partials.timeline', function($view) {
 	// Loop and add to timeline
 	while (strtotime($firstDate) <= strtotime($lastDate)) {
 		list($year, $month, $day) = explode('-', $firstDate);
-		$timeline[$year][$month][$day] = URL::to($year.'-'.$month.'-'.$day. '/00:00');
+		$timeline[$year][$month][$day] = URL::to($year.'-'.$month.'-'.$day);
 
 		$firstDate = date ("Y-m-d", strtotime("+1 day", strtotime($firstDate)));
 	}
