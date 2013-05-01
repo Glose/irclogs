@@ -12,9 +12,32 @@
 	// Appearance
 	background-color: lighten($background-color, 2);
 
+	// Lists --------------------------------------------------------- /
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		ul {
+			display: none;
+		}
+	}
+
+	li {
+		cursor: pointer;
+		padding-left: 1rem;
+	}
+
 	a {
 		color: white;
 		text-decoration: none;
+	}
+
+	li:hover > a,
+	li.current > a,
+	a:hover {
+		color: $orange;
 	}
 
 }

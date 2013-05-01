@@ -1,14 +1,22 @@
 <ul>
 	@foreach($timeline as $year => $months)
 		<li>
-			{{ $year }}
+			<a href="#">{{ $year }}</a>
 			<ul>
 				@foreach($months as $month => $days)
 					<li>
-						{{ $month }}
+						<a href="#">{{ $month }}</a>
 						<ul>
 							@foreach($days as $day => $date)
-								<li>{{ Html::linkAction('LogsController@index', $date, array($year.'-'.$month.'-'.$day, '00:00')) }}</li>
+								@if (URL::full() == $date)
+									<li class="current">
+								@else
+									<li>
+								@endif
+									<a href="{{ $date }}">
+										{{ $year.'-'.$month.'-'.$day }}
+									</a>
+								</li>
 							@endforeach
 						</ul>
 					</li>

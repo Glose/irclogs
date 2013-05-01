@@ -68,9 +68,22 @@ body {
   padding: 1rem;
   margin-top: 6.5rem;
   background-color: #272727; }
+  .timeline ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .timeline ul ul {
+      display: none; }
+  .timeline li {
+    cursor: pointer;
+    padding-left: 1rem; }
   .timeline a {
     color: white;
     text-decoration: none; }
+  .timeline li:hover > a,
+  .timeline li.current > a,
+  .timeline a:hover {
+    color: #db613b; }
 
 .logs {
   max-width: 75rem;

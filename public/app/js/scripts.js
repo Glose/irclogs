@@ -38,3 +38,18 @@ headerSearch.keypress(function(event) {
 
 	searchQuery(url);
 });
+
+// Timeline accordion ---------------------------------------------- /
+
+$('li.current').parentsUntil('.timeline', 'ul').show();
+
+$('.timeline a').click(function(event) {
+	var delay = 200;
+
+	if ($(this).attr('href') == '#') {
+		event.preventDefault();
+
+		$(this).parent().siblings().find('ul').slideUp(delay);
+		$(this).parent().find('> ul').slideToggle(delay);
+	}
+});
