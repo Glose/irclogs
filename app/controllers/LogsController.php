@@ -2,6 +2,10 @@
 
 class LogsController extends BaseController
 {
+
+	/**
+	 * Display the latest logs
+	 */
 	public function index()
 	{
 		$logs = IrcLog::find();
@@ -9,14 +13,19 @@ class LogsController extends BaseController
 		return View::make('logs')
 			->with('logs', $logs);
 	}
-	
-	
+
+	/**
+	 * Search in the database and display results
+	 */
 	public function search()
 	{
-		$q = Input::get('q');
-		
+		$q    = Input::get('q');
 		$logs = IrcLog::textSearch($q);
-		
+
+		if (Request::ajax()) {
+			return View::make('partials.logs', compact('logs'));
+		}
+
 		return View::make('logs')
 			->with('logs', $logs)
 			->with('search', true);
