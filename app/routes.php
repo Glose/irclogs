@@ -12,6 +12,9 @@
 */
 
 Route::get('/',               'LogsController@index');
+
+Route::get('search/',         'LogsController@search');
+Route::get('search/{query?}', 'LogsController@search');
+
 Route::get('/{date}',         'LogsController@index');
 Route::get('/{date}/{time}',  'LogsController@index');
-Route::get('search/{query?}', 'LogsController@search');
