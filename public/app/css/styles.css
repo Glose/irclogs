@@ -26,9 +26,12 @@ body {
   letter-spacing: -.05em;
   width: 100%;
   height: 100%;
-  outline: none; }
-  .header-search small {
-    color: #d69f20; }
+  outline: none;
+  background-color: #222222;
+  font-size: 2rem;
+  border: none;
+  color: white;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; }
 
 .logo {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
@@ -46,7 +49,10 @@ body {
   padding-top: 7rem; }
 
 .logs {
-  max-width: 75rem; }
+  max-width: 75rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
 
 .log-entry {
   margin-bottom: .5rem;

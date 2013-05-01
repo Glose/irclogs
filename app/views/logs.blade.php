@@ -1,7 +1,7 @@
 @extends('global')
 
 @section('content')
-	<ul class="unstyled logs">
+	<ul class="logs">
 		@include('partials.logs')
 	</ul>
 @stop

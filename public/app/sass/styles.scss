@@ -9,13 +9,13 @@
 	@return lighten(black, $lightness);
 }
 
-$orange: #DB613B;
+$orange:      #DB613B;
 $dark-orange: #E3B446;
-$dark-blue: darken(#2C3E50, 14);
+$dark-blue:   darken(#2C3E50, 14);
 
 $background-color: #222;
 
-$font-sans: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+$font-mono: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// SCAFFOLDING ////////////////////////////
@@ -24,7 +24,7 @@ $font-sans: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, mono
 body {
 	background-color: $background-color;
 	color: #ccc;
-	font-family: $font-sans;
+	font-family: $font-mono;
 	font-size: 12px;
 	line-height: 16px;
 }
@@ -42,6 +42,9 @@ body {
 
 .logs {
 	max-width: 75rem;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 .log-entry {
