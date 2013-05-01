@@ -8,6 +8,8 @@
 	// Structure
 	@include box-sizing(border-box);
 	float: right;
+	position: fixed;
+	right: 0;
 	overflow-y: scroll;
 	width: 20%;
 	padding: 1rem;
@@ -20,7 +22,7 @@
 
 	ul {
 		list-style-type: none;
-		margin: 0;
+		margin: 1rem 0;
 		padding: 0;
 
 		ul {
@@ -30,8 +32,23 @@
 
 	li {
 		cursor: pointer;
-		padding-left: 1rem;
 	}
+	li li {
+		padding-left: 1rem;
+		border-left: 5px solid rgba(white, .05);
+	}
+
+	.timeline-year {
+		font-size: 1.3rem;
+	}
+	.timeline-month {
+		font-size: 1.2rem;
+	}
+	.timeline-day {
+		font-size: 1.1rem;
+	}
+
+	// Links --------------------------------------------------------- /
 
 	a {
 		color: white;

@@ -1,6 +1,6 @@
 html {
   font-size: 75%;
-  line-height: 0.25em; }
+  line-height: 0.3em; }
 
 html, body {
   background-color: #222222;
@@ -11,7 +11,7 @@ body {
   color: #ccc;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 1em;
-  line-height: 1.25em; }
+  line-height: 1.5em; }
 
 .header {
   -webkit-box-sizing: border-box;
@@ -66,6 +66,8 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: right;
+  position: fixed;
+  right: 0;
   overflow-y: scroll;
   width: 20%;
   padding: 1rem;
@@ -73,13 +75,21 @@ body {
   background-color: #272727; }
   .timeline ul {
     list-style-type: none;
-    margin: 0;
+    margin: 1rem 0;
     padding: 0; }
     .timeline ul ul {
       display: none; }
   .timeline li {
-    cursor: pointer;
-    padding-left: 1rem; }
+    cursor: pointer; }
+  .timeline li li {
+    padding-left: 1rem;
+    border-left: 5px solid rgba(255, 255, 255, 0.05); }
+  .timeline .timeline-year {
+    font-size: 1.3rem; }
+  .timeline .timeline-month {
+    font-size: 1.2rem; }
+  .timeline .timeline-day {
+    font-size: 1.1rem; }
   .timeline a {
     color: white;
     text-decoration: none; }

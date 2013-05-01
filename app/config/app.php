@@ -187,6 +187,7 @@ return array(
 		'MongovelDB'    => 'Mongovel\Facades\MongovelDB',
 
 		// Others
+		'Carbon' => 'Carbon\Carbon',
 		'Basset' => 'Basset\Facade',
 		
 	),

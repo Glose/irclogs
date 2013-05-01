@@ -4,6 +4,7 @@ namespace IrcLog;
 use DateTime;
 use IrcLog;
 use MongoDate;
+use Carbon;
 use URL;
 
 class Repository
@@ -63,7 +64,7 @@ class Repository
 		// Loop and add to timeline
 		while (strtotime($firstDate) <= strtotime($lastDate)) {
 			list($year, $month, $day) = explode('-', $firstDate);
-			$timeline[$year][$month][$day] = URL::to($year.'-'.$month.'-'.$day);
+			$timeline[$year][$month][$day] = Carbon::createFromDate($year, $month, $day);
 
 			$firstDate = date ("Y-m-d", strtotime("+1 day", strtotime($firstDate)));
 		}

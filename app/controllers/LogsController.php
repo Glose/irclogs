@@ -1,5 +1,4 @@
 <?php
-use Carbon\Carbon;
 
 class LogsController extends BaseController
 {
