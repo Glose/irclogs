@@ -12,7 +12,7 @@ class LogsController extends BaseController
 		$filter = array();
 		if ($date = DateTime::createFromFormat(static::$FORMAT, $date)) {
 			$filter = array(
-				'time' => array('$gt' => $date),
+				'time' => array('$gt' => new MongoDate($date->getTimestamp())),
 			);
 		}
 		$logs = IrcLog::find($filter)->limit(200);

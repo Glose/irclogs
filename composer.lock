@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c3cd96888f9bc7d01c5165efba1bde73",
+    "hash": "cc3bf56d2bc044a6132db89e6e5978d4",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -577,6 +577,51 @@
             "time": "2013-04-24 15:55:28"
         },
         {
+            "name": "fzaninotto/faker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "6108cba60e2bca334c5a0e4e70829562315c0287"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/6108cba60e2bca334c5a0e4e70829562315c0287",
+                "reference": "6108cba60e2bca334c5a0e4e70829562315c0287",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Faker": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2013-04-30 12:39:11"
+        },
+        {
             "name": "ircmaxell/password-compat",
             "version": "1.0.x-dev",
             "source": {
@@ -775,7 +820,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2013-04-26 18:06:41"
+            "time": "2013-04-30 21:45:51"
         },
         {
             "name": "monolog/monolog",
@@ -1808,7 +1853,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "laravel/framework": 20,
-        "julien-c/mongovel": 20
+        "julien-c/mongovel": 20,
+        "fzaninotto/faker": 20
     },
     "platform": [
 

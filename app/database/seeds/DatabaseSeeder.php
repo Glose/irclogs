@@ -11,8 +11,9 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 		
-		$this->call('LogsSeeder');
+		IrcLog::drop();
 		$this->call('EnsureIndexesSeeder');
+		$this->call('LogsSeeder');
 	}
 
 }
