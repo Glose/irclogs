@@ -73,6 +73,10 @@ body {
   margin: 0; }
   .logs a {
     color: #ccc; }
+  .logs a:not(.logs-nav) {
+    color: #ccc; }
+  .logs a.logs-nav {
+    text-decoration: none; }
 
 .log-entry {
   margin-bottom: .5rem;

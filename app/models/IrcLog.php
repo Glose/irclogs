@@ -45,4 +45,14 @@ class IrcLog extends Model
 	{
 		return $this->getDateTime()->format('D, d M');
 	}
+	
+	/**
+	 * Returns an URL for the entry
+	 * 
+	 * @return string
+	 */
+	public function getUrl()
+	{
+		return date('Y-m-d/H:i', $this->time->sec);
+	}
 }

@@ -7,6 +7,12 @@
 	a {
 		color: #ccc;
 	}
+	a:not(.logs-nav) {
+		color: #ccc;
+	}
+	a.logs-nav {
+		text-decoration: none;
+	}
 }
 
 .log-entry {
