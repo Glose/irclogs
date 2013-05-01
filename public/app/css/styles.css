@@ -59,6 +59,7 @@ body {
   color: #777777; }
 
 .log-entry-quit,
-.log-entry-join {
+.log-entry-join,
+.log-secondary {
   font-style: italic;
   color: #34495E; }
