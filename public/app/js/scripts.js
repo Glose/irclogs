@@ -53,10 +53,12 @@ headerSearch.keyup(function (event) {
 		return false;
 	}
 
-	url = headerSearch.attr('action') + '/' + query;
-	window.history.replaceState({}, '', url);
+	if (query !== '') {
+		window.history.replaceState({}, '', url);
+	}
 
 	// Fade out logs during search and cache the last query
+	url = headerSearch.attr('action') + '/' + query;
 	logs.stop(true).fadeTo('fast', 0.5);
 	lastSearch = query;
 
