@@ -63,9 +63,22 @@ $('.timeline a').click(function (event) {
 });
 
 // Move to the requested datetime
-if (logs.data('first-log')) {
-	var offset = $(logs.data('first-log')).offset();
+function moveTo(elem, speed) {
 	$('html, body').animate({
-		scrollTop: offset.top - $('header').height()
-	}, 0);
+		scrollTop: $(elem).offset().top - $('header').height()
+	}, speed);
 }
+
+if (logs.data('first-log')) {
+	moveTo(logs.data('first-log'), 0);
+}
+
+// Log navigation: do not reload the page when we are not displaying search results
+$('.logs-nav').click(function(evt){
+	if ($($(this).children()[0]).hasClass('log-entry') && window.history.replaceState) {
+		evt.preventDefault();
+		window.history.replaceState({}, '', $(this).attr('href'));
+		moveTo(this);
+		return false;
+	}
+})

@@ -34,19 +34,14 @@ function prepareWaypoint(container, wpDirection) {
 				if (direction === 'up') {
 					var scrollTo = $($('.logs').children()[0]);
 					$container.prepend($data.find('.log-entry'));
-					$('html, body').animate({
-						scrollTop: scrollTo.offset().top - $('header').height()
-					}, 0);
+					moveTo(scrollTo, 0);
 				} else if (direction === 'down') {
 					$container.append($data.find('.log-entry'));
 				}
 				$container.trigger('contentChanged');
 
 				$container.removeClass('infinite-loading');
-
-				if ($newMore.length) {
-					$more.replaceWith($newMore);
-				}
+				$more.replaceWith($newMore);
 				$container.waypoint('enable');
 			});
 		}
