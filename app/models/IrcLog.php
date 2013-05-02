@@ -53,7 +53,7 @@ class IrcLog extends Model
 	 */
 	public function getUrl()
 	{
-		return $this->getCarbon()->format('Y-m-d/H:i').'#'.$this->id;
+		return $this->getCarbon()->format('Y-m-d/H:i').'#log-'.$this->id;
 	}
 	
 }

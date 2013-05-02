@@ -28,7 +28,7 @@ logs.on('contentChanged', function(){
 logs.trigger('contentChanged');
 
 // Highlight current message
-message = $(window.location.hash.replace('#', '#log-'));
+message = $(window.location.hash);
 if (message.length) message.addClass('log-highlight');
 
 // Search ---------------------------------------------------------- /

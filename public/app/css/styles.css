@@ -129,6 +129,7 @@ body {
   color: #777777; }
 
 .log-entry-quit,
+.log-entry-part,
 .log-entry-join,
 .log-secondary {
   font-style: italic;
