@@ -28,15 +28,13 @@ function prepareWaypoint(container, wpDirection) {
 			$container.addClass('infinite-loading');
 			
 			$.get($more.attr('href'), function (data) {
-				var $data = $($.parseHTML(data));
 				$more.remove();
-				
 				if (direction === 'up') {
 					var scrollTo = $($('.logs').children()[0]);
-					$container.prepend($data.children());
+					$container.prepend(data);
 					moveTo(scrollTo, 0);
 				} else if (direction === 'down') {
-					$container.append($data.children());
+					$container.append(data);
 				}
 				$container.trigger('contentChanged');
 

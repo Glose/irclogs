@@ -4,7 +4,6 @@ headerSearch = $('.header-search');
 logs = $('.logs');
 
 logs.on('contentChanged', function(){
-	$('.logs li').linkify({target: '_blank'});
 	// Log navigation: do not reload the page when we are not displaying search results
 	$('.logs-nav').click(function(evt){
 		if ($($(this).children()[0]).hasClass('log-entry') && window.history.replaceState) {
@@ -16,6 +15,7 @@ logs.on('contentChanged', function(){
 	});
 });
 logs.trigger('contentChanged');
+$('.logs li').linkify({target: '_blank'});
 
 // Search ---------------------------------------------------------- /
 
@@ -26,6 +26,7 @@ function searchQuery(url) {
 		$.get(url, function (results) {
 			results = $(results).linkify();
 			logs.fadeTo('fast', 1).html(results).trigger('contentChanged');
+			$('.logs li').linkify({target: '_blank'});
 		});
 	}, 50);
 }

@@ -1,5 +1,7 @@
 @extends('global')
 
 @section('content')
-	@include('partials.logs')
+	<ul class="logs" data-first-log="{{ isset($firstLog) ? "#log-$firstLog->_id" : '' }}">
+		@include('partials.logs')
+	</ul>
 @stop
