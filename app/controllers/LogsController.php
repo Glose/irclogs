@@ -81,9 +81,9 @@ class LogsController extends BaseController
 		$log = IrcLog::findOneOrFail($id);
 		
 		// Build the query to fetch logs with
-		list($filter, $sort, $more) = ($direction == 'up') ?
-			array('$lt', -1, 'reset') :
-			array('$gt',  1, 'end');
+		list($filter, $sort) = ($direction == 'up') ?
+			array('$lt', -1) :
+			array('$gt',  1);
 		
 		// Fetch the logs
 		$logs = IrcLog::find(array(
@@ -95,9 +95,11 @@ class LogsController extends BaseController
 		
 		$loadMore = null;
 		if (count($logs) == $this->ajaxLoad) {
-			$loadMore = $more($logs)->_id;
+			$loadMore = end($logs)->_id;
 		}
-		
+		if ($direction == 'up') {
+			$logs = array_reverse($logs);
+		}
 		return View::make('partials.logs')
 			->with('logs', $logs)
 			->with('more' . $direction, $loadMore);
