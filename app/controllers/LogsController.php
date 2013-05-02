@@ -47,17 +47,14 @@ class LogsController extends BaseController
 			$moredown = null;
 		}
 
-		if (Request::ajax()) {
-			return View::make('partials.logs')
-				->with('moreup', $moreup)
-				->with('moredown', $moredown)
-				->with('logs', $logs);
-		}
+		// Take the right view according to context
+		$view = Request::ajax() 
+			? 'partials.logs' : 'logs';
 
-		return View::make('logs')
-			->with('logs', $logs)
+		return View::make($view)
+			->with('logs',     $logs)
 			->with('firstLog', $firstLog)
-			->with('moreup', $moreup)
+			->with('moreup',   $moreup)
 			->with('moredown', $moredown);
 	}
 
@@ -69,18 +66,17 @@ class LogsController extends BaseController
 		if (!$q) return $this->index();
 
 		$logs   = IrcLog::textSearch($q);
+		$view   = Request::ajax() ? 'partials.logs' : 'logs';
 		$search = true;
 
 		if (Request::ajax()) {
 			if (!$logs->count()) {
 				return '<p>No results were found</p>';
 			}
-
-			return View::make('partials.logs', compact('logs', 'search'));
 		}
 
-		return View::make('logs')
-			->with('logs', $logs)
+		return View::make($view)
+			->with('logs',   $logs)
 			->with('search', $q);
 	}
 	
