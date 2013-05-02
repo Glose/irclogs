@@ -8,12 +8,12 @@
 	// Structure
 	@include box-sizing(border-box);
 	float: right;
+	margin-top: $header-height;
+	overflow-y: scroll;
+	padding: 1rem;
 	position: fixed;
 	right: 0;
-	overflow-y: scroll;
 	width: 20%;
-	padding: 1rem;
-	margin-top: $header-height;
 
 	// Appearance
 	background-color: lighten($background-color, 2);
@@ -40,6 +40,7 @@
 
 	.timeline-year {
 		font-size: 1.3rem;
+		margin-left: 1rem;
 	}
 	.timeline-month {
 		font-size: 1.2rem;
