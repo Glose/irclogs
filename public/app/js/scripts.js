@@ -4,7 +4,7 @@ headerSearch = $('.header-search');
 logs = $('.logs');
 
 logs.on('contentChanged', function(){
-	$('.logs li').linkify();
+	$('.logs li').linkify({target: '_blank'});
 });
 logs.trigger('contentChanged');
 

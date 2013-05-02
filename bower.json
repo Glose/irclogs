@@ -2,8 +2,8 @@
   "name": "irclogs",
   "version": "0.0.0",
   "dependencies": {
-    "linkify": "latest",
     "jquery": "latest",
+    "jquery-linkify": "git://github.com/uudashr/jquery-linkify.git",
     "jquery-waypoints": "latest",
     "normalize-css": "latest"
   }

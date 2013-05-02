@@ -6,7 +6,7 @@ Basset::collection('application', function($collection) {
 
 	$collection->add('components/jquery/jquery.min.js');
 	$collection->add('components/jquery-waypoints/waypoints.min.js');
-	$collection->add('components/linkify/jquery.linkify.js');
+	$collection->add('components/jquery-linkify/jquery.linkify.js');
 	$collection->add('app/js/scripts.js');
 	$collection->add('app/js/infinite-scrolling.js');
 });
