@@ -46,7 +46,14 @@ class LogsController extends BaseController
 			list($firstLog, $logs, $moreup) = IrcLog\Repository::getLatest();
 			$moredown = null;
 		}
-		
+
+		if (Request::ajax()) {
+			return View::make('partials.logs')
+				->with('moreup', $moreup)
+				->with('moredown', $moredown)
+				->with('logs', $logs);
+		}
+
 		return View::make('logs')
 			->with('logs', $logs)
 			->with('firstLog', $firstLog)
@@ -59,6 +66,8 @@ class LogsController extends BaseController
 	 */
 	public function search($q = null)
 	{
+		if (!$q) return $this->index();
+
 		$logs   = IrcLog::textSearch($q);
 		$search = true;
 

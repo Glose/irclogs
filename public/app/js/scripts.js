@@ -46,24 +46,24 @@ headerSearch.focus();
 
 headerSearch.keyup(function (event) {
 	var query, url;
-	
+
 	// Get query to execute, cancel if twice the same query
 	query = $(this).val();
-	if (query === lastSearch || query === '') {
+	if (query === lastSearch) {
 		return false;
 	}
-	
+
 	url = headerSearch.attr('action') + '/' + query;
 	window.history.replaceState({}, '', url);
-	
+
 	// Fade out logs during search and cache the last query
 	logs.stop(true).fadeTo('fast', 0.5);
 	lastSearch = query;
-	
+
 	if (event.which === 13) {
 		event.preventDefault();
 	}
-	
+
 	searchQuery(url);
 });
 
