@@ -10,6 +10,38 @@ use URL;
 class Repository
 {
 	/**
+	 * Number of logs to load above the requested date
+	 *
+	 * @var int
+	 */
+	protected static $upLimit = 100;
+	
+	/**
+	 * Number of logs to load after the requested date
+	 *
+	 * @var int
+	 */
+	protected static $downLimit = 200;
+	
+	/**
+	 * Get latest logs
+	 *
+	 * @return array
+	 */
+	public static function getLatest()
+	{
+		$logs = array_reverse(IrcLog::find()
+			->sort(array('time' => -1))
+			->limit(static::$downLimit + static::$upLimit)
+			->all());
+		return array(
+			end($logs),
+			$logs,
+			count($logs) == static::$upLimit + static::$downLimit ? reset($logs)->_id : null
+		);
+	}
+
+	/**
 	 * Get logs around $date
 	 *
 	 * @param DateTime  $date
@@ -18,15 +50,13 @@ class Repository
 	 */
 	public static function getAroundDate(DateTime $date)
 	{
-		$upLimit   = 100;
-		$downLimit = 200;
 		$mongoDate = new MongoDate($date->getTimestamp());
 		
 		$logs = IrcLog::find(array(
 				'time' => array('$gt' => $mongoDate),
 			))
 			->sort(array('time' => 1))
-			->limit($downLimit)
+			->limit(static::$downLimit)
 			->all();
 		
 		$previousLogs = array_reverse(
@@ -34,15 +64,15 @@ class Repository
 				'time' => array('$lte' => $mongoDate),
 			))
 			->sort(array('time' => -1))
-			->limit($upLimit)
+			->limit(static::$upLimit)
 			->all()
 		);
 
 		return array(
 			end($previousLogs),
 			array_merge($previousLogs, $logs),
-			count($previousLogs) == $upLimit ? reset($previousLogs)->_id : null,
-			count($logs) == $downLimit ? end($logs)->_id : null,
+			count($previousLogs) == static::$upLimit ? reset($previousLogs)->_id : null,
+			count($logs) == static::$downLimit ? end($logs)->_id : null,
 		);
 	}
 

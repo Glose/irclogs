@@ -39,12 +39,14 @@ class LogsController extends BaseController
 		if ($date && !$datetime) {
 			$datetime = DateTime::createFromFormat($this->dateFormat, $date);
 		}
-		if (!$datetime) {
-			$datetime = Carbon::now()->subMinutes(5);
+		if ($datetime) {
+			list($firstLog, $logs, $moreup, $moredown) = IrcLog\Repository::getAroundDate($datetime);
+		}
+		else {
+			list($firstLog, $logs, $moreup) = IrcLog\Repository::getLatest();
+			$moredown = null;
 		}
 		
-		list($firstLog, $logs, $moreup, $moredown) = IrcLog\Repository::getAroundDate($datetime);
-
 		return View::make('logs')
 			->with('logs', $logs)
 			->with('firstLog', $firstLog)
