@@ -22,7 +22,7 @@
 		@endif
 
 		{{-- Entry username, hour and message --}}
-		<li class="log-entry log-entry-{{ $log->type }}" data-url="{{ $log->getUrl() }}" id="log-{{ $log->_id }}">
+		<li class="log-entry new-log log-entry-{{ $log->type }}" data-url="{{ $log->getUrl() }}" id="log-{{ $log->_id }}">
 			<span class="log-entry-time">
 				{{ $log->getHour() }}
 			</span>

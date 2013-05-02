@@ -4,16 +4,15 @@ headerSearch = $('.header-search');
 logs = $('.logs');
 
 logs.on('contentChanged', function(){
-	$('.logs li').linkify({target: '_blank'});
-
+	$('.logs .new-log').linkify({target: '_blank'});
+	$('.new-log').removeClass('new-log');
 	// Log navigation: do not reload the page when we are not displaying search results
 	$('.logs-nav').click(function(event){
-		if ($($(this).children()[0]).hasClass('log-entry') && window.history.replaceState) {
-			event.preventDefault();
-
+		var liElem = $($(this).children()[0]);
+		if (liElem.hasClass('log-entry') && window.history.replaceState) {
 			// Remove existing highlights
 			$('.log-highlight').removeClass('log-highlight');
-			$(this).eq(0).addClass('log-highlight');
+			liElem.addClass('log-highlight');
 
 			// Edit history
 			window.history.replaceState({}, '', $(this).attr('href'));
@@ -21,10 +20,12 @@ logs.on('contentChanged', function(){
 			return false;
 		}
 	});
+	$('.logs a').click(function(evt){
+		evt.stopPropagation();
+	})
 });
 
 logs.trigger('contentChanged');
-$('.logs li').linkify({target: '_blank'});
 
 // Highlight current message
 message = $(window.location.hash.replace('#', '#log-'));
@@ -37,9 +38,7 @@ function searchQuery(url) {
 
 	delayedSearch = setTimeout(function () {
 		$.get(url, function (results) {
-			results = $(results).linkify();
 			logs.fadeTo('fast', 1).html(results).trigger('contentChanged');
-			$('.logs li').linkify({target: '_blank'});
 		});
 	}, 50);
 }
@@ -85,13 +84,13 @@ $('.timeline a').click(function (event) {
 	}
 });
 
-// Move to the requested datetime
 function moveTo(elem, speed) {
 	$('html, body').animate({
 		scrollTop: $(elem).offset().top - $('header').height()
 	}, speed);
 }
 
+// Move to the requested datetime
 if (logs.data('first-log')) {
 	moveTo(logs.data('first-log'), 0);
 }
