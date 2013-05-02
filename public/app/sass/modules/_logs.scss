@@ -32,8 +32,13 @@
 
 // Log entries ----------------------------------------------------- /
 
+.log-highlight {
+	background-color: rgba(white, .15);
+	color: white;
+}
+
 .log-entry {
-	margin-bottom: .5rem;
+	padding: .25rem;
 }
 
 .log-entry-username {

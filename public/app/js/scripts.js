@@ -4,18 +4,31 @@ headerSearch = $('.header-search');
 logs = $('.logs');
 
 logs.on('contentChanged', function(){
+	$('.logs li').linkify({target: '_blank'});
+
 	// Log navigation: do not reload the page when we are not displaying search results
-	$('.logs-nav').click(function(evt){
+	$('.logs-nav').click(function(event){
 		if ($($(this).children()[0]).hasClass('log-entry') && window.history.replaceState) {
-			evt.preventDefault();
+			event.preventDefault();
+
+			// Remove existing highlights
+			$('.log-highlight').removeClass('log-highlight');
+			$(this).eq(0).addClass('log-highlight');
+
+			// Edit history
 			window.history.replaceState({}, '', $(this).attr('href'));
 			moveTo(this);
 			return false;
 		}
 	});
 });
+
 logs.trigger('contentChanged');
 $('.logs li').linkify({target: '_blank'});
+
+// Highlight current message
+message = $(window.location.hash.replace('#', '#log-'));
+if (message.length) message.addClass('log-highlight');
 
 // Search ---------------------------------------------------------- /
 

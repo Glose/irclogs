@@ -115,8 +115,12 @@ body {
     border-bottom: 1px solid #404040;
     margin: 2rem 0; }
 
+.log-highlight {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white; }
+
 .log-entry {
-  margin-bottom: .5rem; }
+  padding: .25rem; }
 
 .log-entry-username {
   color: #db613b; }
