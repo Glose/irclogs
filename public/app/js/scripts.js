@@ -8,11 +8,10 @@ logs.on('contentChanged', function(){
 	$('.new-log').removeClass('new-log');
 	// Log navigation: do not reload the page when we are not displaying search results
 	$('.logs-nav').click(function(event){
-		var liElem = $($(this).children()[0]);
-		if (liElem.hasClass('log-entry') && window.history.replaceState) {
+		if (!$(this).hasClass('search-entry') && window.history.replaceState) {
 			// Remove existing highlights
 			$('.log-highlight').removeClass('log-highlight');
-			liElem.addClass('log-highlight');
+			$($(this).children()[0]).addClass('log-highlight');
 
 			// Edit history
 			window.history.replaceState({}, '', $(this).attr('href'));

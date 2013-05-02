@@ -14,7 +14,7 @@
 	<?php $lastLog = $log ?>
 
 	{{-- The log entry --}}
-	<a href="/{{ $log->getUrl() }}" class="logs-nav">
+	<a href="/{{ $log->getUrl() }}" class="logs-nav{{ isset($search) ? ' search-entry' : '' }}">
 
 		{{-- Entry username, hour and message --}}
 		<li class="log-entry new-log log-entry-{{ $log->type }}" data-url="{{ $log->getUrl() }}" id="log-{{ $log->_id }}">
