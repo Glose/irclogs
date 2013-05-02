@@ -3,3 +3,13 @@
 git pull
 composer install
 bower install
+
+
+DIR=${PWD##*/}
+WHO=`logname`
+HASH=`git rev-parse --verify HEAD`
+SHORT=`git rev-parse --short HEAD`
+GIT=`git config --get remote.origin.url | sed 's/.\{4\}$//'`
+URL="$GIT/commit/$HASH"
+MSG="A new version of '$DIR' was just deployed to prod by '$WHO' (<a href='$URL'>$SHORT</a>)."
+curl -sS -d "auth_token=96c97424e0d5aedea1997cbf64e39b&room_id=reaaad&from=Deploy&color=green&message=$MSG&notify=1" https://api.hipchat.com/v1/rooms/message
