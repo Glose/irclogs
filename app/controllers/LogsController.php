@@ -72,7 +72,7 @@ class LogsController extends BaseController
 
 		return View::make('logs')
 			->with('logs', $logs)
-			->with('search', $search);
+			->with('search', $q);
 	}
 	
 	/**
