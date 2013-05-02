@@ -8,18 +8,13 @@
 @foreach ($logs as $log)
 
 	{{-- Date and day --}}
-	@if (isset($lastLog) && $lastLog->getCarbon()->day != $log->getCarbon()->day)
+	@if (!isset($lastLog) || $lastLog->getCarbon()->day != $log->getCarbon()->day)
 		<li class='logs-day'>{{ $log->getDay() }}</li>
 	@endif
 	<?php $lastLog = $log ?>
 
 	{{-- The log entry --}}
 	<a href="/{{ $log->getUrl() }}" class="logs-nav">
-		@if (isset($search) && $search)
-			<li class="log-secondary">
-				–– {{ $log->getDay() }}
-			</li>
-		@endif
 
 		{{-- Entry username, hour and message --}}
 		<li class="log-entry new-log log-entry-{{ $log->type }}" data-url="{{ $log->getUrl() }}" id="log-{{ $log->_id }}">
