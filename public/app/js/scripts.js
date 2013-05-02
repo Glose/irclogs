@@ -9,6 +9,7 @@ logs.on('contentChanged', function(){
 	// Log navigation: do not reload the page when we are not displaying search results
 	$('.logs-nav').click(function(event){
 		if (!$(this).hasClass('search-entry') && window.history.replaceState) {
+
 			// Remove existing highlights
 			$('.log-highlight').removeClass('log-highlight');
 			$($(this).children()[0]).addClass('log-highlight');
@@ -52,7 +53,8 @@ headerSearch.keyup(function (event) {
 
 	// Get query to execute, cancel if twice the same query
 	query = $(this).val();
-	url = $(this).attr('action') + '/' + query;
+	url = headerSearch.attr('action') + '/' + query;
+	window.history.replaceState({}, '', url);
 	if (query === lastSearch || query === '') {
 		return false;
 	}
