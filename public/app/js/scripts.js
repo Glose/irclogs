@@ -3,7 +3,10 @@ var delayedSearch, headerSearch, logs, lastSearch;
 headerSearch = $('.header-search');
 logs = $('.logs');
 
-logs.linkify();
+logs.on('contentChanged', function(){
+	$('.logs li').linkify();
+});
+logs.trigger('contentChanged');
 
 // Search ---------------------------------------------------------- /
 
@@ -13,7 +16,7 @@ function searchQuery(url) {
 	delayedSearch = setTimeout(function () {
 		$.get(url, function (results) {
 			results = $(results).linkify();
-			logs.fadeTo('fast', 1).html(results);
+			logs.fadeTo('fast', 1).html(results).trigger('contentChanged');
 		});
 	}, 50);
 }

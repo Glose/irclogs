@@ -40,6 +40,7 @@ function prepareWaypoint(container, wpDirection) {
 				} else if (direction === 'down') {
 					$container.append($data.find('.log-entry'));
 				}
+				$container.trigger('contentChanged');
 
 				$container.removeClass('infinite-loading');
 
