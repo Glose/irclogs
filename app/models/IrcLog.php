@@ -21,9 +21,9 @@ class IrcLog extends Model
 	/**
 	 * Returns a DateTime object from the hour
 	 */
-	public function getDateTime()
+	public function getCarbon()
 	{
-		return new DateTime('@'.$this->time->sec);
+		return Carbon::createFromTimeStamp($this->time->sec);
 	}
 
 	/**
@@ -33,7 +33,7 @@ class IrcLog extends Model
 	 */
 	public function getHour()
 	{
-		return $this->getDateTime()->format('H:i');
+		return $this->getCarbon()->format('H:i');
 	}
 	
 	/**
@@ -43,7 +43,7 @@ class IrcLog extends Model
 	 */
 	public function getDay()
 	{
-		return $this->getDateTime()->format('D, d M');
+		return $this->getCarbon()->format('l, d M');
 	}
 	
 	/**
@@ -53,7 +53,7 @@ class IrcLog extends Model
 	 */
 	public function getUrl()
 	{
-		return $this->getDateTime()->format('Y-m-d/H:i');
+		return $this->getCarbon()->format('Y-m-d/H:i');
 	}
 	
 }

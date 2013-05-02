@@ -76,7 +76,7 @@ class Repository
 		);
 	}
 
-	/** 
+	/**
 	 * Get a timeline from the first to the last log entry
 	 *
 	 * @return array
@@ -88,8 +88,8 @@ class Repository
 		// Fetch start and end time
 		$firstLog  = IrcLog::find()->sort(array('time' => 1))->limit(1)[0];
 		$lastLog   = IrcLog::find()->sort(array('time' => -1))->limit(1)[0];
-		$firstDate = $firstLog->getDateTime()->format('Y-m-d');
-		$lastDate  = $lastLog->getDateTime()->format('Y-m-d');
+		$firstDate = $firstLog->getCarbon()->format('Y-m-d');
+		$lastDate  = $lastLog->getCarbon()->format('Y-m-d');
 
 		// Loop and add to timeline
 		while (strtotime($firstDate) <= strtotime($lastDate)) {

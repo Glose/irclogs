@@ -108,6 +108,12 @@ body {
     color: #ccc; }
   .logs a.logs-nav {
     text-decoration: none; }
+  .logs .logs-day {
+    font-size: 1.25rem;
+    padding-bottom: .5rem;
+    line-height: 1.25;
+    border-bottom: 1px solid #404040;
+    margin: 2rem 0; }
 
 .log-entry {
   margin-bottom: .5rem; }

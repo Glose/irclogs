@@ -2,6 +2,10 @@
 	<a href="/infinite/up/{{ $moreup }}" class="infinite-more-link-up"></a>
 @endif
 @foreach ($logs as $log)
+	@if (isset($lastLog) && $lastLog->getCarbon()->day != $log->getCarbon()->day)
+		<li class='logs-day'>{{ $log->getDay() }}</li>
+	@endif
+	<?php $lastLog = $log ?>
 	<a href="/{{ $log->getUrl() }}" class="logs-nav">
 		@if (isset($search) && $search)
 			<li class="log-secondary">
