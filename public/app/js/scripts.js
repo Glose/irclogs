@@ -27,10 +27,6 @@ logs.on('contentChanged', function(){
 
 logs.trigger('contentChanged');
 
-// Highlight current message
-message = $(window.location.hash);
-if (message.length) message.addClass('log-highlight');
-
 // Search ---------------------------------------------------------- /
 
 function searchQuery(url) {
@@ -85,13 +81,19 @@ $('.timeline a').click(function (event) {
 	}
 });
 
+// Highlight current message and scroll to it
 function moveTo(elem, speed) {
-	$('html, body').animate({
+	$('body').animate({
 		scrollTop: $(elem).offset().top - $('header').height()
 	}, speed);
 }
-
-// Move to the requested datetime
-if (logs.data('first-log')) {
-	moveTo(logs.data('first-log'), 0);
-}
+$(window).load(function() {
+	message = $(window.location.hash);
+	if (message.length) {
+		message.addClass('log-highlight');
+		moveTo(message, 0);
+	}
+	else if (logs.data('first-log')) {
+		moveTo(logs.data('first-log'), 0);
+	}
+});
