@@ -29,19 +29,18 @@ function prepareWaypoint(container, wpDirection) {
 			
 			$.get($more.attr('href'), function (data) {
 				var $data = $($.parseHTML(data));
-				var $newMore = $data.find(more);
-
+				$more.remove();
+				
 				if (direction === 'up') {
 					var scrollTo = $($('.logs').children()[0]);
-					$container.prepend($data.find('.log-entry'));
+					$container.prepend($data.children());
 					moveTo(scrollTo, 0);
 				} else if (direction === 'down') {
-					$container.append($data.find('.log-entry'));
+					$container.append($data.children());
 				}
 				$container.trigger('contentChanged');
 
 				$container.removeClass('infinite-loading');
-				$more.replaceWith($newMore);
 				$container.waypoint('enable');
 			});
 		}

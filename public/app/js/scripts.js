@@ -5,6 +5,15 @@ logs = $('.logs');
 
 logs.on('contentChanged', function(){
 	$('.logs li').linkify({target: '_blank'});
+	// Log navigation: do not reload the page when we are not displaying search results
+	$('.logs-nav').click(function(evt){
+		if ($($(this).children()[0]).hasClass('log-entry') && window.history.replaceState) {
+			evt.preventDefault();
+			window.history.replaceState({}, '', $(this).attr('href'));
+			moveTo(this);
+			return false;
+		}
+	});
 });
 logs.trigger('contentChanged');
 
@@ -72,13 +81,3 @@ function moveTo(elem, speed) {
 if (logs.data('first-log')) {
 	moveTo(logs.data('first-log'), 0);
 }
-
-// Log navigation: do not reload the page when we are not displaying search results
-$('.logs-nav').click(function(evt){
-	if ($($(this).children()[0]).hasClass('log-entry') && window.history.replaceState) {
-		evt.preventDefault();
-		window.history.replaceState({}, '', $(this).attr('href'));
-		moveTo(this);
-		return false;
-	}
-})
