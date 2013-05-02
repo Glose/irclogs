@@ -8,7 +8,7 @@
 <body>
 
 	<header class="header">
-		<input name="search" value="{{ isset($search) ? $search : null }}" class="header-search" action="{{ URL::to('search/') }}" contenteditable placeholder="Laravel IRC logs" autofocus spellcheck="false">
+		<input name="search" value="{{ isset($search) ? $search : null }}" class="header-search" action="{{ URL::to('search/') }}" contenteditable placeholder="Laravel IRC logs" autofocus autocomplete="off" spellcheck="false">
 		<a class="logo" href="http://laravel.com">
 			{{ Html::image('app/img/laravel.png', 'Laravel') }}
 		</a>
