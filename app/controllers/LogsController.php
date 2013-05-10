@@ -65,7 +65,9 @@ class LogsController extends BaseController
 	{
 		if (!$q) return $this->index();
 
-		$logs   = IrcLog::textSearch($q);
+		$logs   = IrcLog::textSearch($q, array(
+			'nick' => array('$ne' => 'Rommie'),
+		));
 		$view   = Request::ajax() ? 'partials.logs' : 'logs';
 		$search = true;
 
