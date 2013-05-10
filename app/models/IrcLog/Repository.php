@@ -86,8 +86,8 @@ class Repository
 		$timeline = array();
 
 		// Fetch start and end time
-		$firstLog  = IrcLog::find()->sort(array('time' => 1))->limit(1)[0];
-		$lastLog   = IrcLog::find()->sort(array('time' => -1))->limit(1)[0];
+		$firstLog  = IrcLog::find()->sort(array('time' => 1))->limit(1)->first();
+		$lastLog   = IrcLog::find()->sort(array('time' => -1))->limit(1)->first();
 		$firstDate = $firstLog->getCarbon()->format('Y-m-d');
 		$lastDate  = $lastLog->getCarbon()->format('Y-m-d');
 
