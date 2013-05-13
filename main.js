@@ -22,7 +22,7 @@ config.client.addListener('message', function (nick, to, text, message) {
 	logSave({type: 'message', nick: nick, text: text});
 	
 	// Send Push notification to iPhone and HipChat:
-	if (text.indexOf('mongo') !== -1) {
+	if (text.toLowerCase().indexOf('mongo') !== -1) {
 		if (config.hipchat) {
 			config.hipchat.postMessage({room: 'reaaad', from: 'irclogs', message: nick+': '+text, color: 'gray'});
 		}
