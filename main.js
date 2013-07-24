@@ -44,12 +44,14 @@ config.client.addListener('quit', function (nick, reason, channels, message) {
 	logSave({type: 'quit', nick: nick, reason: reason});
 });
 
-
 ////////////////////////////////////////////////////////////////////
 /////////////////////////// ERROR HANDLING /////////////////////////
 ////////////////////////////////////////////////////////////////////
 
 config.client.addListener('error', function(message) {
-	console.log('error: ', message);
+	console.error('error: ', message);
 });
 
+config.client.addListener('raw', function(message) {
+	console.info('raw: ', message);
+});
