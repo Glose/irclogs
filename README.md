@@ -5,6 +5,9 @@ http://irclogs.laravel.io
 
 ---
 
+![Screenshot](http://f.cl.ly/items/0D110U140e3o3c1t3L1m/Screenshot%202013-07-24%20%C3%A0%2017.08.03.png)
+
+### Install
 
 ```bash
 $ composer install
