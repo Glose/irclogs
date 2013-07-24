@@ -46,11 +46,27 @@ body {
   opacity: 0.8;
   margin-bottom: 0.3em;
   position: fixed;
-  top: 1.5rem;
+  top: 0.8rem;
   right: 1.5rem; }
   .logo:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; }
+
+.links {
+  position: fixed;
+  top: 4rem;
+  right: 1.5rem;
+  color: #D0D0D0;
+  font-size: 10px; }
+  .links a {
+    color: white;
+    text-decoration: none;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8; }
+    .links a:hover {
+      text-decoration: underline;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; }
 
 .content {
   -webkit-box-sizing: border-box;

@@ -12,6 +12,9 @@
 		<a class="logo" href="http://laravel.com">
 			{{ Html::image('app/img/laravel.png', 'Laravel') }}
 		</a>
+		<div class="links">
+			Powered by <a href="http://glose.com">Glose</a> · <a href="http://github.com/Glose/irclogs" target="_blank">Fork us on Github</a>
+		</div>
 	</header>
 
 	<section class='container'>

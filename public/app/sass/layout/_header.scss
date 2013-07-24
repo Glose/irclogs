@@ -47,10 +47,29 @@ $header-padding: 1.5rem;
 	@include opacity(0.8);
 	margin-bottom: 0.3em;
 	position: fixed;
-	top: $header-padding;
+	top: 0.8rem;
 	right: $header-padding;
 
 	&:hover {
 		@include opacity(1);
+	}
+}
+
+// Links ----------------------------------------------------------- /
+
+.links {
+	position: fixed;
+	top: 4rem;
+	right: $header-padding;
+	color: #D0D0D0;
+	font-size: 10px;
+	a {
+		color: white;
+		text-decoration: none;
+		@include opacity(0.8);
+		&:hover {
+			text-decoration: underline;
+			@include opacity(1);
+		}
 	}
 }

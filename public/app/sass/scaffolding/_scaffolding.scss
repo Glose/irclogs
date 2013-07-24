@@ -3,7 +3,10 @@
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-@include establish-baseline;
+html {
+	font-size: 75%;
+	line-height: 0.3em;
+}
 
 html, body {
 	background-color: $background-color;
@@ -14,5 +17,6 @@ html, body {
 body {
 	color: #ccc;
 	font-family: $font-mono;
-	@include adjust-font-size-to(1rem);
+	font-size: 1em;
+	line-height: 1.5em;
 }
