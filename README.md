@@ -36,5 +36,5 @@ We're a social reading platform. We built this as a team-building side project, 
 
 ### License
 ---
-* Copyright 2013 [Glose](http://glose.com)
+* Copyright 2013-2015 [Glose](http://glose.com)
 * Distributed under the [MIT License](http://creativecommons.org/licenses/MIT/)
