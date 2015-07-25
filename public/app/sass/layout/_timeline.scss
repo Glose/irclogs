@@ -8,16 +8,18 @@
 	// Structure
 	@include box-sizing(border-box);
 	float: right;
-	margin-top: $header-height;
-	overflow-y: scroll;
+	overflow: scroll;
+	
 	padding: 1rem;
 	position: fixed;
 	right: 0;
+	bottom: 0;
+	top: $header-height;
 	width: 20%;
 
 	// Appearance
 	background-color: lighten($background-color, 2);
-
+	
 	// Lists --------------------------------------------------------- /
 
 	ul {
