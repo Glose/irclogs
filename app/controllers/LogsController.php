@@ -65,7 +65,7 @@ class LogsController extends BaseController
 	{
 		if (!$q) return $this->index();
 
-		$logs   = IrcLog::textSearch(array(
+		$logs   = IrcLog::find(array(
 			'$text' => array('$search' => $q),
 			'nick'  => array('$ne' => 'Rommie'),
 		));
